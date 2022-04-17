@@ -54,9 +54,8 @@ deploy_dev:
     - yarn_dev
   before_script:
     - export S3_BUCKET=${S3_BUCKET_DEV}
-    - echo "S3_BUCKET"
-    - echo ${S3_BUCKET_DEV}
-    - echo ${S3_BUCKET}
+    - echo "env:"
+    - env
     - export CDN_DISTRIBUTION=${CDN_DISTRIBUTION_DEV}
   only:
     refs:
