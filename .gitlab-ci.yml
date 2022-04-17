@@ -7,8 +7,8 @@ stages:
   - run
 
 variables:
-  S3_BUCKET_DEV: ${S3_BUCKET_DEV}
-  S3_BUCKET_PROD: ${S3_BUCKET_PROD}
+  S3_BUCKET_DEV: ${BUCKET_DEV}
+  S3_BUCKET_PROD: ${BUCKET_PROD}
 
 .yarn_build:
   image: node:14
