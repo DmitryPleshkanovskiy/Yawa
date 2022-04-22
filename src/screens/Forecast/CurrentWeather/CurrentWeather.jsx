@@ -1,9 +1,14 @@
 import React from "react";
-
 import PropTypes from "prop-types";
 
+import { Panel } from "components/simple";
+
 export default function CurrentWeather({ weatherData }) {
-  return <div>{JSON.stringify(weatherData)}</div>;
+  return (
+    <Panel>
+      <div>Current weather: {JSON.stringify(weatherData, null, " ")}</div>
+    </Panel>
+  );
 }
 
 CurrentWeather.propTypes = {
