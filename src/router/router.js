@@ -12,6 +12,9 @@ import routesConfig from "./routes/routesConfig";
 
 // Components
 import { Navbar } from "components/complex";
+import { Loader } from "components/simple";
+
+import styles from "./router.module.scss";
 
 const withSuspense = (WrappedComponent, fallback) => (
   <Suspense fallback={fallback}>
@@ -28,7 +31,12 @@ const MainRouter = () => (
           // eslint-disable-next-line react/no-array-index-key
           key={`route-${i}`}
           path={route.path}
-          element={withSuspense(route.element, <div>Loading...</div>)}
+          element={withSuspense(
+            route.element,
+            <div className={styles.suspenseLoader} style={{}}>
+              <Loader variant="dark" />
+            </div>
+          )}
         />
       ))}
       <Route
