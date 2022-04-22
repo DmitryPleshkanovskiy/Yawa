@@ -1,0 +1,26 @@
+.navbarBrand {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.navbarTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.navbarTitle {
+  text-align: left;
+  margin-left: 26px;
+  font-family: "Lobster";
+}
+
+.navbarBadge {
+  font-family: "Poppins";
+  opacity: 0.5;
+}
+
+.settingsNavItem {
+  margin-left: 7px;
+}

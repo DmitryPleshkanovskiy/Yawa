@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/functions";
+@import "~styles/colors";
+
+$primary: $primaryColor;
+
+$theme-colors: (
+  "primary": $primary,
+);
+
+@import "~bootstrap/scss/variables";
+
+.dropdown-menu.show {
+  right: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+@import "~bootstrap/scss/bootstrap";

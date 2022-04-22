@@ -1,0 +1,74 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "plugins": [
+    "react-hooks",
+    "babel",
+    "import",
+    "jsx-a11y",
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "camelcase": 1,
+    "no-warning-comments": 1,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/no-static-element-interactions": 1,
+    "react/destructuring-assignment": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".jsx", ".js"]
+      }
+    ],
+    "no-ternary": 0,
+    "import/no-cycle": 1,
+    "no-nested-ternary": 2,
+    "import/imports-first": "off",
+    "import/order": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "prettier/prettier": ["error"],
+    "no-underscore-dangle": 0,
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "no-unused-vars": 1
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "requireConfigFile": false,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
