@@ -5,6 +5,7 @@ import { routes } from "router";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Container, Badge, NavDropdown } from "react-bootstrap";
 
+import styles from "./navbar.module.scss";
 import "./navbar.scss";
 
 const NavBar = () => {
@@ -13,35 +14,12 @@ const NavBar = () => {
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand
-          style={{ fontSize: 22, display: "flex", alignItems: "center" }}
-          as={NavLink}
-          to="/"
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              marginLeft: 5,
-              fontFamily: "Lobster, cursive",
-            }}
-          >
-            <span style={{ textAlign: "left", marginLeft: 5 }}>
+        <Navbar.Brand className={styles.navbarBrand} as={NavLink} to="/">
+          <div className={styles.navbarTitleWrapper}>
+            <span className={styles.navbarTitle}>
               <i className="wi wi-day-storm-showers" /> Yawa
             </span>
-            <Badge
-              pill
-              bg="info"
-              style={{
-                fontSize: 10,
-                fontFamily: "Poppins",
-                opacity: "0.5",
-                lineHeight: "10px",
-                // height: "100%",
-                // position: "relative",
-                // bottom: -10,
-              }}
-            >
+            <Badge pill bg="info" className={styles.navbarBadge}>
               Yet Another Weather App
             </Badge>
           </div>
@@ -49,7 +27,6 @@ const NavBar = () => {
 
         <>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
           <Navbar.Collapse id="basic-navbar-nav">
             <ul className="navbar-nav mr-auto me-auto">
               <li className="nav-item">
@@ -65,17 +42,15 @@ const NavBar = () => {
             </ul>
 
             <Nav>
-              <NavDropdown
-                title={"Settings" /* userProfile?.user */}
-                id="collasible-nav-dropdown"
-              >
+              <NavDropdown title="Settings" id="collasible-nav-dropdown">
                 <NavDropdown.Item
                   as={NavLink}
                   className={(isActive) => `${isActive ? "active" : ""}`}
                   to={routes.settingsScreen}
                 >
                   <i className="fas fa-user" />
-                  <span style={{ marginLeft: 7 }}>My settings</span>
+
+                  <span className={styles.settingsNavItem}>My settings</span>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
