@@ -25,3 +25,39 @@ Panel.defaultProps = {
   className: "",
   children: null,
 };
+
+Panel.Title = ({ className, children }) => (
+  <div className={`${styles.title} ${className}`}>{children}</div>
+);
+
+Panel.Title.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.number,
+  ]),
+};
+
+Panel.Title.defaultProps = {
+  className: "",
+  children: null,
+};
+
+Panel.Body = ({ className, children }) => (
+  <div className={`${styles.body} ${className}`}>{children}</div>
+);
+
+Panel.Body.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.number,
+  ]),
+};
+
+Panel.Body.defaultProps = {
+  className: "",
+  children: null,
+};
