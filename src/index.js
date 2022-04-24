@@ -4,7 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import "weather-icons/css/weather-icons.css";
+import "weather-icons/css/weather-icons.min.css";
+import "weather-icons/css/weather-icons-wind.min.css";
+
 import "styles/index.scss";
 
 const root = createRoot(document.getElementById("root"));

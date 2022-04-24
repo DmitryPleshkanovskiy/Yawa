@@ -1,0 +1,21 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    >  div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.mainValue {
+  > div {
+    flex-direction: column;
+  }
+}
