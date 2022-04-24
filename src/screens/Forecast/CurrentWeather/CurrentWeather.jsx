@@ -39,54 +39,58 @@ export default function CurrentWeather({ weatherData }) {
 
   return (
     <Panel>
-      <div className={styles.layout}>
-        <div className={styles.mainValue}>
-          <div>
-            <WeatherIcon code={weatherCode} iconSize="lg" />
-          </div>
-        </div>
-        <div>
-          <div>
-            <i className="wi wi-thermometer" />{" "}
-            {Math.round(temperature * 10) / 10} <i className="wi wi-celsius" />
+      <Panel.Body>
+        <div className={styles.layout}>
+          <div className={styles.mainValue}>
+            <div>
+              <WeatherIcon code={weatherCode} iconSize="lg" />
+            </div>
           </div>
           <div>
-            Feels like:{" "}
             <div>
               <i className="wi wi-thermometer" />{" "}
-              {Math.round(temperatureApparent * 10) / 10}{" "}
+              {Math.round(temperature * 10) / 10}{" "}
               <i className="wi wi-celsius" />
+            </div>
+            <div>
+              Feels like:{" "}
+              <div>
+                <i className="wi wi-thermometer" />{" "}
+                {Math.round(temperatureApparent * 10) / 10}{" "}
+                <i className="wi wi-celsius" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <i className="wi wi-strong-wind" /> {windSpeed} m/s{" "}
+                <i
+                  className={`wi wi-wind towards-${Math.round(
+                    (180 + windDirection) % 360
+                  )}-deg`}
+                />
+              </div>
             </div>
           </div>
           <div>
             <div>
-              <i className="wi wi-strong-wind" /> {windSpeed} m/s{" "}
-              <i
-                className={`wi wi-wind towards-${Math.round(
-                  (180 + windDirection) % 360
-                )}-deg`}
-              />
+              <i className="wi wi-humidity" /> {humidity}%
             </div>
+            <div>
+              <i className="wi wi-barometer" />{" "}
+              {Math.round(pressureSurfaceLevel)}
+              hPa
+            </div>
+            <div>
+              <i className="wi wi-raindrop" /> {precipitationIntensity}
+              mm/hr
+            </div>
+            <div>
+              <i className="wi wi-raindrop" /> {precipitationProbability}%
+            </div>
+            <div>{precipitationTypes[precipitationType]}</div>
           </div>
         </div>
-        <div>
-          <div>
-            <i className="wi wi-humidity" /> {humidity}%
-          </div>
-          <div>
-            <i className="wi wi-barometer" /> {Math.round(pressureSurfaceLevel)}
-            hPa
-          </div>
-          <div>
-            <i className="wi wi-raindrop" /> {precipitationIntensity}
-            mm/hr
-          </div>
-          <div>
-            <i className="wi wi-raindrop" /> {precipitationProbability}%
-          </div>
-          <div>{precipitationTypes[precipitationType]}</div>
-        </div>
-      </div>
+      </Panel.Body>
     </Panel>
   );
 }
@@ -105,7 +109,7 @@ CurrentWeather.propTypes = {
           pressureSurfaceLevel: PropTypes.number,
           precipitationIntensity: PropTypes.number,
           precipitationProbability: PropTypes.number,
-          precipitationType: PropTypes.string,
+          precipitationType: PropTypes.number,
         }),
       })
     ),
