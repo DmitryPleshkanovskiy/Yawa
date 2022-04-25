@@ -18,6 +18,7 @@ export default function WeatherIcon({ code, iconSize, showDescription }) {
         className={`${styles.iconWrapper} ${
           !showDescription ? styles.additionalBottomPadding : ""
         }`}
+        title={description}
       >
         <i
           className={`wi ${icon} ${styles[`icon-size-${iconSize}`]} ${
@@ -39,7 +40,7 @@ WeatherIcon.propTypes = {
 };
 
 WeatherIcon.defaultProps = {
-  code: -1,
+  code: 0,
   iconSize: "sm",
   showDescription: true,
 };
