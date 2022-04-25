@@ -1,126 +1,106 @@
 import React, { useEffect, useState } from "react";
 
-import moment from "moment";
-import queryString from "query-string";
+// Global store
+import { useStore } from "store";
 
+// Service
 import WeatherApiService from "api/weatherApiService";
 
+// Components
 import { Container } from "components/simple";
 
 import CurrentWeather from "./CurrentWeather";
 import ForecastOneDayStep from "./ForecastOneDayStep";
 import ForecastOneHourStep from "./ForecastOneHourStep";
 
+// Styles
 import styles from "./forecast.module.scss";
-
-// import mockedWeatherData from "../../mockedWeatherData.json";
 
 // Default to Amsterdam coordinates
 const defaultUserLocation = { lat: 52.379189, lon: 4.899431 };
 
+const weatherApiService = new WeatherApiService();
+
 export default function Forecast() {
-  const [userLocation, setUserLocation] = useState(defaultUserLocation);
-  const [forecastData, setForecastData] = useState(null);
+  const {
+    state: { forecastData, isForecastDataLoading, forecastDataError },
+    actions,
+  } = useStore();
 
-  const weatherApiService = new WeatherApiService();
+  const [userLocation, setUserLocation] = useState(null);
 
-  const fetchWeatherData = async () => {
-    // TODO: Wrap into a service
-    const apikey = process.env.REACT_APP_WEATHER_API_KEY;
-    const location = [userLocation.lat, userLocation.lon];
-    const fields = [
-      "precipitationIntensity",
-      "precipitationType",
-      "humidity",
-      "windSpeed",
-      "windGust",
-      "windDirection",
-      "temperature",
-      "temperatureApparent",
-      "cloudCover",
-      "pressureSurfaceLevel",
-      "weatherCode",
-      "precipitationProbability",
-      "precipitationType",
-      "sunriseTime",
-      "sunsetTime",
-      "weatherCodeFullDay",
-    ];
+  const fetchForecastDataRequest = () => {
+    actions.fetchForecastDataRequest();
 
-    const units = "metric";
-    const timesteps = ["current", "1h", "1d"];
-    const now = moment.utc();
-    const startTime = moment.utc(now).add(0, "minutes").toISOString();
-    const endTime = moment.utc(now).add(7, "days").toISOString();
-
-    const timezone = "UTC";
-
-    const getTimelineParameters = queryString.stringify(
-      {
-        apikey,
-        location,
-        fields,
-        units,
-        timesteps,
-        startTime,
-        endTime,
-        timezone,
-      },
-      { arrayFormat: "comma" }
-    );
-
-    if (!forecastData) {
-      const response = await weatherApiService.getTimelines(
-        getTimelineParameters
-      );
-
-      setForecastData(response);
-    }
+    weatherApiService
+      .getTimelines(userLocation)
+      .then((res) => actions.fetchForecastDataSuccess(res))
+      .catch((err) => {
+        // TODO: Replace with notification
+        alert(err);
+        actions.fetchForecastDataFailure(err);
+      });
   };
 
   useEffect(() => {
-    // const restoredUserLocation = localStorage.getItem("userLocation");
-    // if (restoredUserLocation) {
-    //   setUserLocation(restoredUserLocation);
-    //   // fetchWeratherData();
-    // } else {
-    //   window?.navigator?.geolocation?.getCurrentPosition(
-    //     (data) => {
-    //       const { latitude, longitude } = data?.coords || {};
-    //       setUserLocation({
-    //         lat: latitude,
-    //         lon: longitude,
-    //       });
-    //     },
-    //     (error) => {
-    //       setUserLocation(defaultUserLocation);
-    //       // TODO: show message/notification to enable geolocation
-    //       console.log(error);
-    //     }
-    //   );
-    // }
-    fetchWeatherData();
+    const restoredUserLocation = localStorage.getItem("userLocation");
+    if (restoredUserLocation) {
+      setUserLocation(restoredUserLocation);
+      fetchForecastDataRequest(restoredUserLocation);
+    } else {
+      window?.navigator?.geolocation?.getCurrentPosition(
+        (data) => {
+          const { latitude, longitude } = data?.coords || {};
+          setUserLocation({
+            lat: latitude,
+            lon: longitude,
+          });
+        },
+        (error) => {
+          setUserLocation(defaultUserLocation);
+          // TODO: show message/notification to enable geolocation
+          console.log(error);
+        }
+      );
+    }
   }, []);
 
   useEffect(() => {
-    // fetchWeratherData();
-    // setForecastData(mockedWeatherData);
+    if (userLocation) {
+      fetchForecastDataRequest(userLocation);
+    }
   }, [userLocation]);
 
+  // TODO: Need better way to destructure data in case of order change
   const [weatherData1hStep, weatherData1dStep, weatherDataCurrent] =
     forecastData?.data?.timelines || [{}, {}, {}];
 
+  const isLoading =
+    isForecastDataLoading || (!forecastData && !forecastDataError);
+
   return (
-    <Container className={styles.layout}>
-      <CurrentWeather weatherData={weatherDataCurrent} />
-      <ForecastOneHourStep
-        className={styles.forecastOneHourPanel}
-        weatherData={weatherData1hStep}
-      />
-      <ForecastOneDayStep
-        className={styles.forecastOneDayPanel}
-        weatherData={weatherData1dStep}
-      />
-    </Container>
+    <>
+      {!forecastDataError ? (
+        <Container className={styles.layout}>
+          <CurrentWeather
+            weatherData={weatherDataCurrent}
+            isLoading={isLoading}
+          />
+          <ForecastOneHourStep
+            className={styles.forecastOneHourPanel}
+            weatherData={weatherData1hStep}
+            isLoading={isLoading}
+          />
+          <ForecastOneDayStep
+            className={styles.forecastOneDayPanel}
+            weatherData={weatherData1dStep}
+            isLoading={isLoading}
+          />
+        </Container>
+      ) : (
+        // TODO: Add Alert component
+        <div>Alert {JSON.stringify(forecastDataError)}</div>
+      )}
+    </>
   );
 }
