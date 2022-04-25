@@ -39,20 +39,16 @@ export default function CurrentWeather({ weatherData }) {
 
   return (
     <Panel>
-      <Panel.Body>
+      <Panel.Title>Current:</Panel.Title>
+      <Panel.Body className={styles.panelBody}>
         <div className={styles.layout}>
-          <div className={styles.mainValue}>
-            <div>
-              <WeatherIcon code={weatherCode} iconSize="lg" />
-            </div>
-          </div>
-          <div>
-            <div>
+          <div className={styles.columnLeft}>
+            <div className={styles.temp}>
               <i className="wi wi-thermometer" />{" "}
               {Math.round(temperature * 10) / 10}{" "}
               <i className="wi wi-celsius" />
             </div>
-            <div>
+            <div className={styles.tempApparent}>
               Feels like:{" "}
               <div>
                 <i className="wi wi-thermometer" />{" "}
@@ -71,23 +67,35 @@ export default function CurrentWeather({ weatherData }) {
               </div>
             </div>
           </div>
-          <div>
+
+          <div className={styles.mainValue}>
             <div>
+              <WeatherIcon code={weatherCode} iconSize="lg" />
+            </div>
+          </div>
+          <div className={styles.columnRight}>
+            <div className={styles.humidity}>
               <i className="wi wi-humidity" /> {humidity}%
             </div>
+
+            <div className={styles.precipitation}>
+              <div>
+                {precipitationType === 0
+                  ? "No precipitation"
+                  : precipitationTypes[precipitationType]}
+              </div>
+              <i className="wi wi-raindrop" /> {precipitationProbability}%
+              <div>
+                <i className="wi wi-raindrop" /> {precipitationIntensity}
+                mm/hr
+              </div>
+            </div>
+
             <div>
               <i className="wi wi-barometer" />{" "}
               {Math.round(pressureSurfaceLevel)}
               hPa
             </div>
-            <div>
-              <i className="wi wi-raindrop" /> {precipitationIntensity}
-              mm/hr
-            </div>
-            <div>
-              <i className="wi wi-raindrop" /> {precipitationProbability}%
-            </div>
-            <div>{precipitationTypes[precipitationType]}</div>
           </div>
         </div>
       </Panel.Body>

@@ -1,4 +1,13 @@
+@import "~styles/colors";
+
+.panelBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .layout {
+  flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
@@ -18,4 +27,38 @@
   > div {
     flex-direction: column;
   }
+}
+
+.columnLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.temp {
+  font-size: 25px;
+}
+
+.tempApparent {
+  font-size: 13px;
+  color: $greyShade2;
+  text-align: center;
+}
+
+.precipitation {
+  font-size: 13px;
+  color: $greyShade2;
+  text-align: center;
+}
+
+.humidity {
+  font-size: 25px;
+}
+
+.columnRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { Suspense } from "react";
 import {
   BrowserRouter as Router,
@@ -14,6 +15,7 @@ import routesConfig from "./routes/routesConfig";
 import { Navbar } from "components/complex";
 import { Loader } from "components/simple";
 
+// Styles
 import styles from "./router.module.scss";
 
 const withSuspense = (WrappedComponent, fallback) => (
@@ -28,7 +30,6 @@ const MainRouter = () => (
     <Routes>
       {routesConfig.map((route, i) => (
         <Route
-          // eslint-disable-next-line react/no-array-index-key
           key={`route-${i}`}
           path={route.path}
           element={withSuspense(
