@@ -13,7 +13,7 @@ const precipitationTypes = {
   4: "Ice Pellets",
 };
 
-export default function CurrentWeather({ weatherData }) {
+export default function CurrentWeather({ weatherData, isLoading }) {
   const {
     weatherCode,
     temperature,
@@ -40,7 +40,7 @@ export default function CurrentWeather({ weatherData }) {
   return (
     <Panel>
       <Panel.Title>Current:</Panel.Title>
-      <Panel.Body className={styles.panelBody}>
+      <Panel.Body className={styles.panelBody} isLoading={isLoading}>
         <div className={styles.layout}>
           <div className={styles.columnLeft}>
             <div className={styles.temp}>
@@ -122,8 +122,10 @@ CurrentWeather.propTypes = {
       })
     ),
   }),
+  isLoading: PropTypes.bool,
 };
 
 CurrentWeather.defaultProps = {
   weatherData: {},
+  isLoading: false,
 };

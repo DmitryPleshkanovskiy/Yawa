@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import styles from "./panel.module.scss";
+import Loader from "../Loader";
 
 export default function Panel({ className, children, ...props }) {
   return (
@@ -44,8 +45,10 @@ Panel.Title.defaultProps = {
   children: null,
 };
 
-Panel.Body = ({ className, children }) => (
-  <div className={`${styles.body} ${className}`}>{children}</div>
+Panel.Body = ({ className, isLoading, children }) => (
+  <div className={`${styles.body} ${className}`}>
+    {isLoading ? <Loader variant="dark" /> : children}
+  </div>
 );
 
 Panel.Body.propTypes = {
@@ -55,9 +58,11 @@ Panel.Body.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.number,
   ]),
+  isLoading: PropTypes.bool,
 };
 
 Panel.Body.defaultProps = {
   className: "",
   children: null,
+  isLoading: false,
 };
