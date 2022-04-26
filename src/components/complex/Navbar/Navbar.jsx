@@ -25,37 +25,35 @@ const NavBar = () => {
           </div>
         </Navbar.Brand>
 
-        <>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <ul className="navbar-nav mr-auto me-auto">
-              <li className="nav-item">
-                <NavLink className={navLinkClass} to={routes.forecastScreen}>
-                  Forecast
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className={navLinkClass} to={routes.mapScreen}>
-                  Weather map
-                </NavLink>
-              </li>
-            </ul>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <ul className="navbar-nav mr-auto me-auto">
+            <li className="nav-item">
+              <NavLink className={navLinkClass} to={routes.forecastScreen}>
+                Forecast
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className={navLinkClass} to={routes.mapScreen}>
+                Weather map
+              </NavLink>
+            </li>
+          </ul>
 
-            <Nav>
-              <NavDropdown title="Settings" id="collasible-nav-dropdown">
-                <NavDropdown.Item
-                  as={NavLink}
-                  className={(isActive) => `${isActive ? "active" : ""}`}
-                  to={routes.settingsScreen}
-                >
-                  <i className="fas fa-user" />
+          <Nav>
+            <NavDropdown title="Settings" id="collasible-nav-dropdown">
+              <NavDropdown.Item
+                as={NavLink}
+                className={(isActive) => `${isActive ? "active" : ""}`}
+                to={routes.settingsScreen}
+              >
+                <i className="fas fa-user" />
 
-                  <span className={styles.settingsNavItem}>My settings</span>
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </>
+                <span className={styles.settingsNavItem}>My settings</span>
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

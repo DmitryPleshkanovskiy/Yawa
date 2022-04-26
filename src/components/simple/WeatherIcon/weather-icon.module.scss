@@ -1,0 +1,48 @@
+.iconWrapper {
+  padding: 15px 12px 0;
+  text-align: center;
+}
+
+.additionalBottomPadding {
+  padding-bottom: 15px;
+}
+
+.icon-size {
+  &-lg {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  &-sm {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.color {
+  &-shadow {
+    color: gray;
+  }
+
+  &-warm {
+    color: orange;
+  }
+
+  &-wet {
+    color: darkslategray;
+  }
+
+  &-cold {
+    color: cornflowerblue;
+  }
+
+  &-storm {
+    color: darkslateblue;
+  }
+}
+
+.description {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 13px;
+}

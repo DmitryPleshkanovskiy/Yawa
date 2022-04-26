@@ -1,0 +1,3425 @@
+{
+  "data": {
+    "timelines": [
+      {
+        "timestep": "1h",
+        "endTime": "2022-05-01T20:00:00Z",
+        "startTime": "2022-04-24T20:00:00Z",
+        "intervals": [
+          {
+            "startTime": "2022-04-24T20:00:00Z",
+            "values": {
+              "cloudCover": 13,
+              "humidity": 73,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1009.77,
+              "sunriseTime": "2022-04-24T04:23:00Z",
+              "sunsetTime": "2022-04-24T18:53:00Z",
+              "temperature": 9.81,
+              "temperatureApparent": 9.81,
+              "weatherCode": 1100,
+              "windDirection": 22.63,
+              "windGust": 9.63,
+              "windSpeed": 3.88
+            }
+          },
+          {
+            "startTime": "2022-04-24T21:00:00Z",
+            "values": {
+              "cloudCover": 0.14,
+              "humidity": 80.39,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1010,
+              "sunriseTime": "2022-04-24T04:23:00Z",
+              "sunsetTime": "2022-04-24T18:53:00Z",
+              "temperature": 8.84,
+              "temperatureApparent": 8.84,
+              "weatherCode": 1000,
+              "windDirection": 11.18,
+              "windGust": 7.75,
+              "windSpeed": 3.13
+            }
+          },
+          {
+            "startTime": "2022-04-24T22:00:00Z",
+            "values": {
+              "cloudCover": 23.64,
+              "humidity": 86.27,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1010.22,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 8.29,
+              "temperatureApparent": 8.29,
+              "weatherCode": 1100,
+              "windDirection": 21.55,
+              "windGust": 6.61,
+              "windSpeed": 2.97
+            }
+          },
+          {
+            "startTime": "2022-04-24T23:00:00Z",
+            "values": {
+              "cloudCover": 33.55,
+              "humidity": 87.97,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1010.59,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 7.98,
+              "temperatureApparent": 7.98,
+              "weatherCode": 1100,
+              "windDirection": 12.84,
+              "windGust": 6.28,
+              "windSpeed": 2.76
+            }
+          },
+          {
+            "startTime": "2022-04-25T00:00:00Z",
+            "values": {
+              "cloudCover": 50.64,
+              "humidity": 88.22,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1010.59,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 7.64,
+              "temperatureApparent": 7.64,
+              "weatherCode": 1101,
+              "windDirection": 8.06,
+              "windGust": 6.11,
+              "windSpeed": 2.9
+            }
+          },
+          {
+            "startTime": "2022-04-25T01:00:00Z",
+            "values": {
+              "cloudCover": 60.15,
+              "humidity": 86.34,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1010.63,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 7.44,
+              "temperatureApparent": 7.44,
+              "weatherCode": 1101,
+              "windDirection": 7.9,
+              "windGust": 6.12,
+              "windSpeed": 2.82
+            }
+          },
+          {
+            "startTime": "2022-04-25T02:00:00Z",
+            "values": {
+              "cloudCover": 68.39,
+              "humidity": 86.13,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1010.43,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 7.44,
+              "temperatureApparent": 7.44,
+              "weatherCode": 1102,
+              "windDirection": 12.44,
+              "windGust": 5.92,
+              "windSpeed": 2.75
+            }
+          },
+          {
+            "startTime": "2022-04-25T03:00:00Z",
+            "values": {
+              "cloudCover": 85.62,
+              "humidity": 87.52,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1010.55,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 7.53,
+              "temperatureApparent": 7.53,
+              "weatherCode": 1001,
+              "windDirection": 16.29,
+              "windGust": 6.14,
+              "windSpeed": 2.9
+            }
+          },
+          {
+            "startTime": "2022-04-25T04:00:00Z",
+            "values": {
+              "cloudCover": 88.65,
+              "humidity": 87.83,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1010.45,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 7.58,
+              "temperatureApparent": 7.58,
+              "weatherCode": 1001,
+              "windDirection": 23.44,
+              "windGust": 6.34,
+              "windSpeed": 2.97
+            }
+          },
+          {
+            "startTime": "2022-04-25T05:00:00Z",
+            "values": {
+              "cloudCover": 98.19,
+              "humidity": 87.25,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1010.89,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 7.87,
+              "temperatureApparent": 7.87,
+              "weatherCode": 1001,
+              "windDirection": 33.95,
+              "windGust": 7.1,
+              "windSpeed": 3.3
+            }
+          },
+          {
+            "startTime": "2022-04-25T06:00:00Z",
+            "values": {
+              "cloudCover": 99.52,
+              "humidity": 86.85,
+              "precipitationIntensity": 0.2256,
+              "precipitationProbability": 10,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1011.19,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 8.14,
+              "temperatureApparent": 8.14,
+              "weatherCode": 1001,
+              "windDirection": 39.06,
+              "windGust": 8.19,
+              "windSpeed": 3.72
+            }
+          },
+          {
+            "startTime": "2022-04-25T07:00:00Z",
+            "values": {
+              "cloudCover": 98.77,
+              "humidity": 83.45,
+              "precipitationIntensity": 0.0469,
+              "precipitationProbability": 15,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1011.87,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 8.28,
+              "temperatureApparent": 8.28,
+              "weatherCode": 1001,
+              "windDirection": 36.17,
+              "windGust": 9,
+              "windSpeed": 4.06
+            }
+          },
+          {
+            "startTime": "2022-04-25T08:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 85.1,
+              "precipitationIntensity": 0.6318,
+              "precipitationProbability": 15,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1012.42,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 8.17,
+              "temperatureApparent": 8.17,
+              "weatherCode": 4200,
+              "windDirection": 37.23,
+              "windGust": 9.58,
+              "windSpeed": 4.34
+            }
+          },
+          {
+            "startTime": "2022-04-25T09:00:00Z",
+            "values": {
+              "cloudCover": 98.38,
+              "humidity": 84.39,
+              "precipitationIntensity": 0.6406,
+              "precipitationProbability": 25,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1012.97,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 7.93,
+              "temperatureApparent": 7.93,
+              "weatherCode": 4200,
+              "windDirection": 45.78,
+              "windGust": 10.03,
+              "windSpeed": 4.53
+            }
+          },
+          {
+            "startTime": "2022-04-25T10:00:00Z",
+            "values": {
+              "cloudCover": 94.73,
+              "humidity": 76.09,
+              "precipitationIntensity": 0.5684,
+              "precipitationProbability": 25,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1013.12,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 8.87,
+              "temperatureApparent": 8.87,
+              "weatherCode": 4200,
+              "windDirection": 47.26,
+              "windGust": 10.04,
+              "windSpeed": 4.1
+            }
+          },
+          {
+            "startTime": "2022-04-25T11:00:00Z",
+            "values": {
+              "cloudCover": 99.61,
+              "humidity": 71.6,
+              "precipitationIntensity": 0.3662,
+              "precipitationProbability": 15,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1013.09,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 9.8,
+              "temperatureApparent": 9.8,
+              "weatherCode": 4000,
+              "windDirection": 54.25,
+              "windGust": 11.22,
+              "windSpeed": 4.87
+            }
+          },
+          {
+            "startTime": "2022-04-25T12:00:00Z",
+            "values": {
+              "cloudCover": 99.18,
+              "humidity": 70.07,
+              "precipitationIntensity": 0.2383,
+              "precipitationProbability": 15,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1013.54,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 10.28,
+              "temperatureApparent": 10.28,
+              "weatherCode": 1001,
+              "windDirection": 59.28,
+              "windGust": 10.64,
+              "windSpeed": 4.52
+            }
+          },
+          {
+            "startTime": "2022-04-25T13:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 67.76,
+              "precipitationIntensity": 0.0527,
+              "precipitationProbability": 10,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1013.6,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 10.81,
+              "temperatureApparent": 10.81,
+              "weatherCode": 1001,
+              "windDirection": 64.29,
+              "windGust": 10.33,
+              "windSpeed": 4.35
+            }
+          },
+          {
+            "startTime": "2022-04-25T14:00:00Z",
+            "values": {
+              "cloudCover": 98.85,
+              "humidity": 69.97,
+              "precipitationIntensity": 0.2217,
+              "precipitationProbability": 5,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1013.74,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 11,
+              "temperatureApparent": 11,
+              "weatherCode": 1001,
+              "windDirection": 67,
+              "windGust": 9.68,
+              "windSpeed": 4.36
+            }
+          },
+          {
+            "startTime": "2022-04-25T15:00:00Z",
+            "values": {
+              "cloudCover": 96.05,
+              "humidity": 71.05,
+              "precipitationIntensity": 0.1816,
+              "precipitationProbability": 5,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1013.73,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 10.97,
+              "temperatureApparent": 10.97,
+              "weatherCode": 1001,
+              "windDirection": 67.05,
+              "windGust": 9.66,
+              "windSpeed": 3.86
+            }
+          },
+          {
+            "startTime": "2022-04-25T16:00:00Z",
+            "values": {
+              "cloudCover": 92.12,
+              "humidity": 72.86,
+              "precipitationIntensity": 0.1689,
+              "precipitationProbability": 5,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1014.19,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 11.02,
+              "temperatureApparent": 11.02,
+              "weatherCode": 1001,
+              "windDirection": 59.34,
+              "windGust": 9.21,
+              "windSpeed": 3.6
+            }
+          },
+          {
+            "startTime": "2022-04-25T17:00:00Z",
+            "values": {
+              "cloudCover": 85.36,
+              "humidity": 70.71,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1014.38,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 11.68,
+              "temperatureApparent": 11.68,
+              "weatherCode": 1001,
+              "windDirection": 43.66,
+              "windGust": 7.89,
+              "windSpeed": 3.22
+            }
+          },
+          {
+            "startTime": "2022-04-25T18:00:00Z",
+            "values": {
+              "cloudCover": 55.85,
+              "humidity": 72.8,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1014.73,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 11.57,
+              "temperatureApparent": 11.57,
+              "weatherCode": 1101,
+              "windDirection": 40.72,
+              "windGust": 7.45,
+              "windSpeed": 3.09
+            }
+          },
+          {
+            "startTime": "2022-04-25T19:00:00Z",
+            "values": {
+              "cloudCover": 63.74,
+              "humidity": 71.02,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1015.14,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 10.61,
+              "temperatureApparent": 10.61,
+              "weatherCode": 1102,
+              "windDirection": 29.67,
+              "windGust": 8.65,
+              "windSpeed": 4.02
+            }
+          },
+          {
+            "startTime": "2022-04-25T20:00:00Z",
+            "values": {
+              "cloudCover": 84.65,
+              "humidity": 70.42,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1015.77,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 9.94,
+              "temperatureApparent": 9.94,
+              "weatherCode": 1001,
+              "windDirection": 29.09,
+              "windGust": 8.9,
+              "windSpeed": 4.15
+            }
+          },
+          {
+            "startTime": "2022-04-25T21:00:00Z",
+            "values": {
+              "cloudCover": 80.17,
+              "humidity": 72.33,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1016.3,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 9.25,
+              "temperatureApparent": 9.25,
+              "weatherCode": 1001,
+              "windDirection": 26.21,
+              "windGust": 9.58,
+              "windSpeed": 4.44
+            }
+          },
+          {
+            "startTime": "2022-04-25T22:00:00Z",
+            "values": {
+              "cloudCover": 86.18,
+              "humidity": 75.05,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1016.84,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 8.55,
+              "temperatureApparent": 8.55,
+              "weatherCode": 1001,
+              "windDirection": 28.26,
+              "windGust": 9.47,
+              "windSpeed": 4.11
+            }
+          },
+          {
+            "startTime": "2022-04-25T23:00:00Z",
+            "values": {
+              "cloudCover": 74.89,
+              "humidity": 74.63,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1017,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 8.15,
+              "temperatureApparent": 8.15,
+              "weatherCode": 1102,
+              "windDirection": 26.59,
+              "windGust": 8.83,
+              "windSpeed": 3.84
+            }
+          },
+          {
+            "startTime": "2022-04-26T00:00:00Z",
+            "values": {
+              "cloudCover": 99.99,
+              "humidity": 76.63,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1017.16,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 7.82,
+              "temperatureApparent": 7.82,
+              "weatherCode": 1001,
+              "windDirection": 25.05,
+              "windGust": 8.24,
+              "windSpeed": 3.69
+            }
+          },
+          {
+            "startTime": "2022-04-26T01:00:00Z",
+            "values": {
+              "cloudCover": 48.2,
+              "humidity": 81.64,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1017.22,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 7.45,
+              "temperatureApparent": 7.45,
+              "weatherCode": 1101,
+              "windDirection": 23.82,
+              "windGust": 7.94,
+              "windSpeed": 3.38
+            }
+          },
+          {
+            "startTime": "2022-04-26T02:00:00Z",
+            "values": {
+              "cloudCover": 46.78,
+              "humidity": 84.77,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1017.18,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 6.96,
+              "temperatureApparent": 6.96,
+              "weatherCode": 1101,
+              "windDirection": 18.3,
+              "windGust": 7.22,
+              "windSpeed": 3.14
+            }
+          },
+          {
+            "startTime": "2022-04-26T03:00:00Z",
+            "values": {
+              "cloudCover": 0.12,
+              "humidity": 85.53,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1017.31,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 6.49,
+              "temperatureApparent": 6.49,
+              "weatherCode": 1000,
+              "windDirection": 13.24,
+              "windGust": 6.62,
+              "windSpeed": 3.01
+            }
+          },
+          {
+            "startTime": "2022-04-26T04:00:00Z",
+            "values": {
+              "cloudCover": 0.05,
+              "humidity": 88.21,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1017.47,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 6.03,
+              "temperatureApparent": 6.03,
+              "weatherCode": 1000,
+              "windDirection": 9.04,
+              "windGust": 6.31,
+              "windSpeed": 2.79
+            }
+          },
+          {
+            "startTime": "2022-04-26T05:00:00Z",
+            "values": {
+              "cloudCover": 38.22,
+              "humidity": 92.51,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1017.92,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 5.87,
+              "temperatureApparent": 5.87,
+              "weatherCode": 1101,
+              "windDirection": 7.79,
+              "windGust": 5.82,
+              "windSpeed": 2.7
+            }
+          },
+          {
+            "startTime": "2022-04-26T06:00:00Z",
+            "values": {
+              "cloudCover": 66.13,
+              "humidity": 88.92,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1018.32,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 6.89,
+              "temperatureApparent": 6.89,
+              "weatherCode": 1102,
+              "windDirection": 5.34,
+              "windGust": 5.88,
+              "windSpeed": 2.73
+            }
+          },
+          {
+            "startTime": "2022-04-26T07:00:00Z",
+            "values": {
+              "cloudCover": 52.9,
+              "humidity": 77.39,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1018.65,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 8.57,
+              "temperatureApparent": 8.57,
+              "weatherCode": 1101,
+              "windDirection": 17.76,
+              "windGust": 8.85,
+              "windSpeed": 3.99
+            }
+          },
+          {
+            "startTime": "2022-04-26T08:00:00Z",
+            "values": {
+              "cloudCover": 54.78,
+              "humidity": 64.14,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1018.92,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 10.09,
+              "temperatureApparent": 10.09,
+              "weatherCode": 1101,
+              "windDirection": 17.79,
+              "windGust": 9.05,
+              "windSpeed": 3.95
+            }
+          },
+          {
+            "startTime": "2022-04-26T09:00:00Z",
+            "values": {
+              "cloudCover": 58.77,
+              "humidity": 58.05,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1019.1,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 10.92,
+              "temperatureApparent": 10.92,
+              "weatherCode": 1101,
+              "windDirection": 11.08,
+              "windGust": 9.49,
+              "windSpeed": 4.14
+            }
+          },
+          {
+            "startTime": "2022-04-26T10:00:00Z",
+            "values": {
+              "cloudCover": 55.37,
+              "humidity": 53.13,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1019.14,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 11.68,
+              "temperatureApparent": 11.68,
+              "weatherCode": 1101,
+              "windDirection": 7.77,
+              "windGust": 9.5,
+              "windSpeed": 3.61
+            }
+          },
+          {
+            "startTime": "2022-04-26T11:00:00Z",
+            "values": {
+              "cloudCover": 78.2,
+              "humidity": 48.04,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1019.08,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 12.22,
+              "temperatureApparent": 12.22,
+              "weatherCode": 1001,
+              "windDirection": 359.28,
+              "windGust": 8.55,
+              "windSpeed": 3.62
+            }
+          },
+          {
+            "startTime": "2022-04-26T12:00:00Z",
+            "values": {
+              "cloudCover": 68.5,
+              "humidity": 45.88,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1019.27,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 12.85,
+              "temperatureApparent": 12.85,
+              "weatherCode": 1102,
+              "windDirection": 350.47,
+              "windGust": 8.51,
+              "windSpeed": 3.4
+            }
+          },
+          {
+            "startTime": "2022-04-26T13:00:00Z",
+            "values": {
+              "cloudCover": 84.75,
+              "humidity": 38.86,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1019.13,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 13.81,
+              "temperatureApparent": 13.81,
+              "weatherCode": 1001,
+              "windDirection": 342.39,
+              "windGust": 8.26,
+              "windSpeed": 3.32
+            }
+          },
+          {
+            "startTime": "2022-04-26T14:00:00Z",
+            "values": {
+              "cloudCover": 79.96,
+              "humidity": 50.03,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1019.48,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 12.85,
+              "temperatureApparent": 12.85,
+              "weatherCode": 1001,
+              "windDirection": 323.37,
+              "windGust": 10.25,
+              "windSpeed": 4.33
+            }
+          },
+          {
+            "startTime": "2022-04-26T15:00:00Z",
+            "values": {
+              "cloudCover": 97.05,
+              "humidity": 50.22,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1019.55,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 12.67,
+              "temperatureApparent": 12.67,
+              "weatherCode": 1001,
+              "windDirection": 336.72,
+              "windGust": 10.17,
+              "windSpeed": 4.26
+            }
+          },
+          {
+            "startTime": "2022-04-26T16:00:00Z",
+            "values": {
+              "cloudCover": 87.69,
+              "humidity": 57.23,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1019.9,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 11.78,
+              "temperatureApparent": 11.78,
+              "weatherCode": 1001,
+              "windDirection": 337.68,
+              "windGust": 9.81,
+              "windSpeed": 4.23
+            }
+          },
+          {
+            "startTime": "2022-04-26T17:00:00Z",
+            "values": {
+              "cloudCover": 56.26,
+              "humidity": 64.04,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1020.05,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 11,
+              "temperatureApparent": 11,
+              "weatherCode": 1101,
+              "windDirection": 348.06,
+              "windGust": 9.75,
+              "windSpeed": 4.35
+            }
+          },
+          {
+            "startTime": "2022-04-26T18:00:00Z",
+            "values": {
+              "cloudCover": 45.85,
+              "humidity": 65.68,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1020.6,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 10.18,
+              "temperatureApparent": 10.18,
+              "weatherCode": 1101,
+              "windDirection": 355.34,
+              "windGust": 9.74,
+              "windSpeed": 4.09
+            }
+          },
+          {
+            "startTime": "2022-04-26T19:00:00Z",
+            "values": {
+              "cloudCover": 30.18,
+              "humidity": 68.25,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1021.29,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 9.09,
+              "temperatureApparent": 9.09,
+              "weatherCode": 1100,
+              "windDirection": 354.83,
+              "windGust": 9,
+              "windSpeed": 3.13
+            }
+          },
+          {
+            "startTime": "2022-04-26T20:00:00Z",
+            "values": {
+              "cloudCover": 4.67,
+              "humidity": 74.48,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1021.85,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 8.04,
+              "temperatureApparent": 8.04,
+              "weatherCode": 1000,
+              "windDirection": 347.9,
+              "windGust": 6.76,
+              "windSpeed": 1.87
+            }
+          },
+          {
+            "startTime": "2022-04-26T21:00:00Z",
+            "values": {
+              "cloudCover": 27.65,
+              "humidity": 76.94,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1022.12,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 7.27,
+              "temperatureApparent": 7.27,
+              "weatherCode": 1100,
+              "windDirection": 340.35,
+              "windGust": 3.93,
+              "windSpeed": 1.64
+            }
+          },
+          {
+            "startTime": "2022-04-26T22:00:00Z",
+            "values": {
+              "cloudCover": 30.1,
+              "humidity": 80.51,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1022.3,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 6.72,
+              "temperatureApparent": 6.72,
+              "weatherCode": 1100,
+              "windDirection": 343.61,
+              "windGust": 3.57,
+              "windSpeed": 1.72
+            }
+          },
+          {
+            "startTime": "2022-04-26T23:00:00Z",
+            "values": {
+              "cloudCover": 71.66,
+              "humidity": 81.3,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1022.46,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 6.7,
+              "temperatureApparent": 6.7,
+              "weatherCode": 1102,
+              "windDirection": 344.42,
+              "windGust": 3.62,
+              "windSpeed": 1.75
+            }
+          },
+          {
+            "startTime": "2022-04-27T00:00:00Z",
+            "values": {
+              "cloudCover": 75.08,
+              "humidity": 81.25,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1022.79,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 6.95,
+              "temperatureApparent": 6.95,
+              "weatherCode": 1001,
+              "windDirection": 347.53,
+              "windGust": 4.77,
+              "windSpeed": 2.26
+            }
+          },
+          {
+            "startTime": "2022-04-27T01:00:00Z",
+            "values": {
+              "cloudCover": 50.61,
+              "humidity": 81.62,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1023.09,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 6.86,
+              "temperatureApparent": 6.86,
+              "weatherCode": 1101,
+              "windDirection": 351.3,
+              "windGust": 5.27,
+              "windSpeed": 2.48
+            }
+          },
+          {
+            "startTime": "2022-04-27T02:00:00Z",
+            "values": {
+              "cloudCover": 27.47,
+              "humidity": 85.09,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1023.42,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 6.17,
+              "temperatureApparent": 6.17,
+              "weatherCode": 1100,
+              "windDirection": 350.56,
+              "windGust": 5.24,
+              "windSpeed": 2.21
+            }
+          },
+          {
+            "startTime": "2022-04-27T03:00:00Z",
+            "values": {
+              "cloudCover": 51.26,
+              "humidity": 83.62,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1023.48,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 5.74,
+              "temperatureApparent": 5.74,
+              "weatherCode": 1101,
+              "windDirection": 345.51,
+              "windGust": 4.6,
+              "windSpeed": 1.64
+            }
+          },
+          {
+            "startTime": "2022-04-27T04:00:00Z",
+            "values": {
+              "cloudCover": 31.04,
+              "humidity": 81.88,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1023.67,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 5.43,
+              "temperatureApparent": 5.43,
+              "weatherCode": 1100,
+              "windDirection": 329.19,
+              "windGust": 3.35,
+              "windSpeed": 1.42
+            }
+          },
+          {
+            "startTime": "2022-04-27T05:00:00Z",
+            "values": {
+              "cloudCover": 14.02,
+              "humidity": 79.04,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1024.07,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 5.63,
+              "temperatureApparent": 5.63,
+              "weatherCode": 1100,
+              "windDirection": 259.93,
+              "windGust": 2.84,
+              "windSpeed": 0.83
+            }
+          },
+          {
+            "startTime": "2022-04-27T06:00:00Z",
+            "values": {
+              "cloudCover": 54.17,
+              "humidity": 76.01,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1024.7,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 6.4,
+              "temperatureApparent": 6.4,
+              "weatherCode": 1101,
+              "windDirection": 258.77,
+              "windGust": 1.64,
+              "windSpeed": 0.75
+            }
+          },
+          {
+            "startTime": "2022-04-27T07:00:00Z",
+            "values": {
+              "cloudCover": 70.98,
+              "humidity": 66.69,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1024.99,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 8.37,
+              "temperatureApparent": 8.37,
+              "weatherCode": 1102,
+              "windDirection": 219.71,
+              "windGust": 2.36,
+              "windSpeed": 0.9
+            }
+          },
+          {
+            "startTime": "2022-04-27T08:00:00Z",
+            "values": {
+              "cloudCover": 76.07,
+              "humidity": 58.61,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.42,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 10.04,
+              "temperatureApparent": 10.04,
+              "weatherCode": 1001,
+              "windDirection": 222.48,
+              "windGust": 2.54,
+              "windSpeed": 0.87
+            }
+          },
+          {
+            "startTime": "2022-04-27T09:00:00Z",
+            "values": {
+              "cloudCover": 66.12,
+              "humidity": 57.22,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.7,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 11.3,
+              "temperatureApparent": 11.3,
+              "weatherCode": 1102,
+              "windDirection": 271.25,
+              "windGust": 2.52,
+              "windSpeed": 0.28
+            }
+          },
+          {
+            "startTime": "2022-04-27T10:00:00Z",
+            "values": {
+              "cloudCover": 72.26,
+              "humidity": 52.15,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.97,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 12.31,
+              "temperatureApparent": 12.31,
+              "weatherCode": 1102,
+              "windDirection": 355.71,
+              "windGust": 1.77,
+              "windSpeed": 0.4
+            }
+          },
+          {
+            "startTime": "2022-04-27T11:00:00Z",
+            "values": {
+              "cloudCover": 90.36,
+              "humidity": 48.16,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.13,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 12.93,
+              "temperatureApparent": 12.93,
+              "weatherCode": 1001,
+              "windDirection": 49.64,
+              "windGust": 2,
+              "windSpeed": 0.5
+            }
+          },
+          {
+            "startTime": "2022-04-27T12:00:00Z",
+            "values": {
+              "cloudCover": 89.81,
+              "humidity": 44.65,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.21,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 13.83,
+              "temperatureApparent": 13.83,
+              "weatherCode": 1001,
+              "windDirection": 78.43,
+              "windGust": 2.97,
+              "windSpeed": 0.89
+            }
+          },
+          {
+            "startTime": "2022-04-27T13:00:00Z",
+            "values": {
+              "cloudCover": 86.51,
+              "humidity": 42.78,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.13,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 14.41,
+              "temperatureApparent": 14.41,
+              "weatherCode": 1001,
+              "windDirection": 78.57,
+              "windGust": 3.8,
+              "windSpeed": 1.37
+            }
+          },
+          {
+            "startTime": "2022-04-27T14:00:00Z",
+            "values": {
+              "cloudCover": 43.11,
+              "humidity": 42.87,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.92,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 14.73,
+              "temperatureApparent": 14.73,
+              "weatherCode": 1101,
+              "windDirection": 73.35,
+              "windGust": 4.98,
+              "windSpeed": 1.91
+            }
+          },
+          {
+            "startTime": "2022-04-27T15:00:00Z",
+            "values": {
+              "cloudCover": 42.67,
+              "humidity": 45.5,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.87,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 14.74,
+              "temperatureApparent": 14.74,
+              "weatherCode": 1101,
+              "windDirection": 65.48,
+              "windGust": 5.24,
+              "windSpeed": 2.06
+            }
+          },
+          {
+            "startTime": "2022-04-27T16:00:00Z",
+            "values": {
+              "cloudCover": 54.5,
+              "humidity": 44.52,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.01,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 14.52,
+              "temperatureApparent": 14.52,
+              "weatherCode": 1101,
+              "windDirection": 59.37,
+              "windGust": 6.01,
+              "windSpeed": 2.45
+            }
+          },
+          {
+            "startTime": "2022-04-27T17:00:00Z",
+            "values": {
+              "cloudCover": 18.42,
+              "humidity": 46.2,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.53,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 13.79,
+              "temperatureApparent": 13.79,
+              "weatherCode": 1100,
+              "windDirection": 56.8,
+              "windGust": 6.73,
+              "windSpeed": 2.87
+            }
+          },
+          {
+            "startTime": "2022-04-27T18:00:00Z",
+            "values": {
+              "cloudCover": 0,
+              "humidity": 50.76,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1027.06,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 13.04,
+              "temperatureApparent": 13.04,
+              "weatherCode": 1000,
+              "windDirection": 54.35,
+              "windGust": 6.69,
+              "windSpeed": 2.51
+            }
+          },
+          {
+            "startTime": "2022-04-27T19:00:00Z",
+            "values": {
+              "cloudCover": 11.12,
+              "humidity": 61.59,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1027.67,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 11.72,
+              "temperatureApparent": 11.72,
+              "weatherCode": 1000,
+              "windDirection": 54.35,
+              "windGust": 6.13,
+              "windSpeed": 2.46
+            }
+          },
+          {
+            "startTime": "2022-04-27T20:00:00Z",
+            "values": {
+              "cloudCover": 22.24,
+              "humidity": 72.42,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.27,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 10.4,
+              "temperatureApparent": 10.4,
+              "weatherCode": 1100,
+              "windDirection": 10.85,
+              "windGust": 5.57,
+              "windSpeed": 2.41
+            }
+          },
+          {
+            "startTime": "2022-04-27T21:00:00Z",
+            "values": {
+              "cloudCover": 33.37,
+              "humidity": 83.26,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.88,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 9.09,
+              "temperatureApparent": 9.09,
+              "weatherCode": 1100,
+              "windDirection": 10.85,
+              "windGust": 5.01,
+              "windSpeed": 2.36
+            }
+          },
+          {
+            "startTime": "2022-04-27T22:00:00Z",
+            "values": {
+              "cloudCover": 22.79,
+              "humidity": 85.06,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.22,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 8.79,
+              "temperatureApparent": 8.79,
+              "weatherCode": 1100,
+              "windDirection": 10.85,
+              "windGust": 4.88,
+              "windSpeed": 2.25
+            }
+          },
+          {
+            "startTime": "2022-04-27T23:00:00Z",
+            "values": {
+              "cloudCover": 12.21,
+              "humidity": 86.86,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.56,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 8.49,
+              "temperatureApparent": 8.49,
+              "weatherCode": 1100,
+              "windDirection": 41.58,
+              "windGust": 4.74,
+              "windSpeed": 2.13
+            }
+          },
+          {
+            "startTime": "2022-04-28T00:00:00Z",
+            "values": {
+              "cloudCover": 1.63,
+              "humidity": 88.67,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.91,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 8.2,
+              "temperatureApparent": 8.2,
+              "weatherCode": 1000,
+              "windDirection": 41.58,
+              "windGust": 4.61,
+              "windSpeed": 2.01
+            }
+          },
+          {
+            "startTime": "2022-04-28T01:00:00Z",
+            "values": {
+              "cloudCover": 18.77,
+              "humidity": 91.34,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.07,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 7.75,
+              "temperatureApparent": 7.75,
+              "weatherCode": 1100,
+              "windDirection": 41.58,
+              "windGust": 4.28,
+              "windSpeed": 1.93
+            }
+          },
+          {
+            "startTime": "2022-04-28T02:00:00Z",
+            "values": {
+              "cloudCover": 35.92,
+              "humidity": 94,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.24,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 7.31,
+              "temperatureApparent": 7.31,
+              "weatherCode": 1100,
+              "windDirection": 35.2,
+              "windGust": 3.95,
+              "windSpeed": 1.85
+            }
+          },
+          {
+            "startTime": "2022-04-28T03:00:00Z",
+            "values": {
+              "cloudCover": 53.06,
+              "humidity": 96.67,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.41,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 6.87,
+              "temperatureApparent": 6.87,
+              "weatherCode": 1101,
+              "windDirection": 35.2,
+              "windGust": 3.62,
+              "windSpeed": 1.77
+            }
+          },
+          {
+            "startTime": "2022-04-28T04:00:00Z",
+            "values": {
+              "cloudCover": 55.4,
+              "humidity": 95.21,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.71,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 7.31,
+              "temperatureApparent": 7.31,
+              "weatherCode": 1101,
+              "windDirection": 35.2,
+              "windGust": 3.82,
+              "windSpeed": 1.84
+            }
+          },
+          {
+            "startTime": "2022-04-28T05:00:00Z",
+            "values": {
+              "cloudCover": 57.75,
+              "humidity": 93.75,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.01,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 7.75,
+              "temperatureApparent": 7.75,
+              "weatherCode": 1101,
+              "windDirection": 36.25,
+              "windGust": 4.03,
+              "windSpeed": 1.9
+            }
+          },
+          {
+            "startTime": "2022-04-28T06:00:00Z",
+            "values": {
+              "cloudCover": 60.09,
+              "humidity": 92.29,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.31,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 8.19,
+              "temperatureApparent": 8.19,
+              "weatherCode": 1101,
+              "windDirection": 36.25,
+              "windGust": 4.23,
+              "windSpeed": 1.96
+            }
+          },
+          {
+            "startTime": "2022-04-28T07:00:00Z",
+            "values": {
+              "cloudCover": 54.9,
+              "humidity": 83.42,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.73,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 9.51,
+              "temperatureApparent": 9.51,
+              "weatherCode": 1101,
+              "windDirection": 36.25,
+              "windGust": 5.28,
+              "windSpeed": 2.32
+            }
+          },
+          {
+            "startTime": "2022-04-28T08:00:00Z",
+            "values": {
+              "cloudCover": 49.71,
+              "humidity": 74.56,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.14,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 10.84,
+              "temperatureApparent": 10.84,
+              "weatherCode": 1101,
+              "windDirection": 49.56,
+              "windGust": 6.33,
+              "windSpeed": 2.68
+            }
+          },
+          {
+            "startTime": "2022-04-28T09:00:00Z",
+            "values": {
+              "cloudCover": 44.53,
+              "humidity": 65.69,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.55,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 12.17,
+              "temperatureApparent": 12.17,
+              "weatherCode": 1101,
+              "windDirection": 49.56,
+              "windGust": 7.38,
+              "windSpeed": 3.04
+            }
+          },
+          {
+            "startTime": "2022-04-28T10:00:00Z",
+            "values": {
+              "cloudCover": 33.03,
+              "humidity": 60.02,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.37,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 12.99,
+              "temperatureApparent": 12.99,
+              "weatherCode": 1100,
+              "windDirection": 49.56,
+              "windGust": 7.86,
+              "windSpeed": 3.21
+            }
+          },
+          {
+            "startTime": "2022-04-28T11:00:00Z",
+            "values": {
+              "cloudCover": 21.54,
+              "humidity": 54.35,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.19,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 13.81,
+              "temperatureApparent": 13.81,
+              "weatherCode": 1100,
+              "windDirection": 48,
+              "windGust": 8.34,
+              "windSpeed": 3.38
+            }
+          },
+          {
+            "startTime": "2022-04-28T12:00:00Z",
+            "values": {
+              "cloudCover": 10.04,
+              "humidity": 48.69,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 14.62,
+              "temperatureApparent": 14.62,
+              "weatherCode": 1000,
+              "windDirection": 48,
+              "windGust": 8.82,
+              "windSpeed": 3.55
+            }
+          },
+          {
+            "startTime": "2022-04-28T13:00:00Z",
+            "values": {
+              "cloudCover": 36.39,
+              "humidity": 49.9,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.84,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 14.6,
+              "temperatureApparent": 14.6,
+              "weatherCode": 1100,
+              "windDirection": 48,
+              "windGust": 9.01,
+              "windSpeed": 3.7
+            }
+          },
+          {
+            "startTime": "2022-04-28T14:00:00Z",
+            "values": {
+              "cloudCover": 62.74,
+              "humidity": 51.11,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.67,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 14.57,
+              "temperatureApparent": 14.57,
+              "weatherCode": 1102,
+              "windDirection": 29.95,
+              "windGust": 9.2,
+              "windSpeed": 3.85
+            }
+          },
+          {
+            "startTime": "2022-04-28T15:00:00Z",
+            "values": {
+              "cloudCover": 89.09,
+              "humidity": 52.32,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.5,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 14.55,
+              "temperatureApparent": 14.55,
+              "weatherCode": 1001,
+              "windDirection": 29.95,
+              "windGust": 9.39,
+              "windSpeed": 4.01
+            }
+          },
+          {
+            "startTime": "2022-04-28T16:00:00Z",
+            "values": {
+              "cloudCover": 83.34,
+              "humidity": 56.63,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.57,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 13.37,
+              "temperatureApparent": 13.37,
+              "weatherCode": 1001,
+              "windDirection": 29.95,
+              "windGust": 9.62,
+              "windSpeed": 4.06
+            }
+          },
+          {
+            "startTime": "2022-04-28T17:00:00Z",
+            "values": {
+              "cloudCover": 77.59,
+              "humidity": 60.94,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.63,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 12.2,
+              "temperatureApparent": 12.2,
+              "weatherCode": 1001,
+              "windDirection": 26.85,
+              "windGust": 9.85,
+              "windSpeed": 4.12
+            }
+          },
+          {
+            "startTime": "2022-04-28T18:00:00Z",
+            "values": {
+              "cloudCover": 71.84,
+              "humidity": 65.25,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.69,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 11.02,
+              "temperatureApparent": 11.02,
+              "weatherCode": 1102,
+              "windDirection": 26.85,
+              "windGust": 10.09,
+              "windSpeed": 4.17
+            }
+          },
+          {
+            "startTime": "2022-04-28T19:00:00Z",
+            "values": {
+              "cloudCover": 76.64,
+              "humidity": 66.63,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.11,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 10.04,
+              "temperatureApparent": 10.04,
+              "weatherCode": 1001,
+              "windDirection": 26.85,
+              "windGust": 9.5,
+              "windSpeed": 3.92
+            }
+          },
+          {
+            "startTime": "2022-04-28T20:00:00Z",
+            "values": {
+              "cloudCover": 81.44,
+              "humidity": 68.02,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.53,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 9.05,
+              "temperatureApparent": 9.05,
+              "weatherCode": 1001,
+              "windDirection": 48.34,
+              "windGust": 8.91,
+              "windSpeed": 3.67
+            }
+          },
+          {
+            "startTime": "2022-04-28T21:00:00Z",
+            "values": {
+              "cloudCover": 86.24,
+              "humidity": 69.41,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.95,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 8.07,
+              "temperatureApparent": 8.07,
+              "weatherCode": 1001,
+              "windDirection": 48.34,
+              "windGust": 8.32,
+              "windSpeed": 3.43
+            }
+          },
+          {
+            "startTime": "2022-04-28T22:00:00Z",
+            "values": {
+              "cloudCover": 89.63,
+              "humidity": 68.34,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.91,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 7.63,
+              "temperatureApparent": 7.63,
+              "weatherCode": 1001,
+              "windDirection": 58.48,
+              "windGust": 8.42,
+              "windSpeed": 3.53
+            }
+          },
+          {
+            "startTime": "2022-04-28T23:00:00Z",
+            "values": {
+              "cloudCover": 91.75,
+              "humidity": 68.72,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1033.16,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 7.11,
+              "temperatureApparent": 7.11,
+              "weatherCode": 1001,
+              "windDirection": 54.87,
+              "windGust": 7.54,
+              "windSpeed": 3.08
+            }
+          },
+          {
+            "startTime": "2022-04-29T00:00:00Z",
+            "values": {
+              "cloudCover": 93.09,
+              "humidity": 72.19,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1033.04,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 6.41,
+              "temperatureApparent": 6.41,
+              "weatherCode": 1001,
+              "windDirection": 54.48,
+              "windGust": 7.3,
+              "windSpeed": 2.96
+            }
+          },
+          {
+            "startTime": "2022-04-29T01:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 75.12,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1033.09,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 6.01,
+              "temperatureApparent": 6.01,
+              "weatherCode": 1001,
+              "windDirection": 51.64,
+              "windGust": 6.88,
+              "windSpeed": 2.73
+            }
+          },
+          {
+            "startTime": "2022-04-29T02:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 77.85,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.97,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 5.68,
+              "temperatureApparent": 5.68,
+              "weatherCode": 1001,
+              "windDirection": 53.01,
+              "windGust": 6.57,
+              "windSpeed": 2.54
+            }
+          },
+          {
+            "startTime": "2022-04-29T03:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 77.93,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.59,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 5.82,
+              "temperatureApparent": 5.82,
+              "weatherCode": 1001,
+              "windDirection": 59.88,
+              "windGust": 6.4,
+              "windSpeed": 2.46
+            }
+          },
+          {
+            "startTime": "2022-04-29T04:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 81.14,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.33,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 5.31,
+              "temperatureApparent": 5.31,
+              "weatherCode": 1001,
+              "windDirection": 60.71,
+              "windGust": 6.1,
+              "windSpeed": 2.27
+            }
+          },
+          {
+            "startTime": "2022-04-29T05:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 79.87,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.03,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 5.73,
+              "temperatureApparent": 5.73,
+              "weatherCode": 1001,
+              "windDirection": 56.87,
+              "windGust": 6.24,
+              "windSpeed": 2.24
+            }
+          },
+          {
+            "startTime": "2022-04-29T06:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 74.81,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.14,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 7.01,
+              "temperatureApparent": 7.01,
+              "weatherCode": 1001,
+              "windDirection": 59.01,
+              "windGust": 5.95,
+              "windSpeed": 2.65
+            }
+          },
+          {
+            "startTime": "2022-04-29T07:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 65.52,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.27,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 8.44,
+              "temperatureApparent": 8.44,
+              "weatherCode": 1001,
+              "windDirection": 55.2,
+              "windGust": 5.52,
+              "windSpeed": 3.3
+            }
+          },
+          {
+            "startTime": "2022-04-29T08:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 59.22,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.32,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 9.57,
+              "temperatureApparent": 9.57,
+              "weatherCode": 1001,
+              "windDirection": 52.41,
+              "windGust": 5.21,
+              "windSpeed": 3.48
+            }
+          },
+          {
+            "startTime": "2022-04-29T09:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 55.62,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.17,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 10.53,
+              "temperatureApparent": 10.53,
+              "weatherCode": 1001,
+              "windDirection": 52.1,
+              "windGust": 4.95,
+              "windSpeed": 3.66
+            }
+          },
+          {
+            "startTime": "2022-04-29T10:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 52.61,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.95,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 11.5,
+              "temperatureApparent": 11.5,
+              "weatherCode": 1001,
+              "windDirection": 46.86,
+              "windGust": 4.74,
+              "windSpeed": 3.78
+            }
+          },
+          {
+            "startTime": "2022-04-29T11:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 48.86,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1031.52,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 12.66,
+              "temperatureApparent": 12.66,
+              "weatherCode": 1001,
+              "windDirection": 44.84,
+              "windGust": 4.72,
+              "windSpeed": 3.85
+            }
+          },
+          {
+            "startTime": "2022-04-29T12:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 46.81,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.89,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 13.31,
+              "temperatureApparent": 13.31,
+              "weatherCode": 1001,
+              "windDirection": 46.01,
+              "windGust": 4.86,
+              "windSpeed": 3.98
+            }
+          },
+          {
+            "startTime": "2022-04-29T13:00:00Z",
+            "values": {
+              "cloudCover": 75.55,
+              "humidity": 47.87,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.48,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 13.28,
+              "temperatureApparent": 13.28,
+              "weatherCode": 1001,
+              "windDirection": 46.01,
+              "windGust": 5.12,
+              "windSpeed": 4.25
+            }
+          },
+          {
+            "startTime": "2022-04-29T14:00:00Z",
+            "values": {
+              "cloudCover": 51.11,
+              "humidity": 48.93,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.07,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 13.25,
+              "temperatureApparent": 13.25,
+              "weatherCode": 1101,
+              "windDirection": 26.58,
+              "windGust": 5.39,
+              "windSpeed": 4.52
+            }
+          },
+          {
+            "startTime": "2022-04-29T15:00:00Z",
+            "values": {
+              "cloudCover": 26.66,
+              "humidity": 49.99,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.67,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 13.22,
+              "temperatureApparent": 13.22,
+              "weatherCode": 1100,
+              "windDirection": 26.58,
+              "windGust": 5.65,
+              "windSpeed": 4.79
+            }
+          },
+          {
+            "startTime": "2022-04-29T16:00:00Z",
+            "values": {
+              "cloudCover": 22.55,
+              "humidity": 57.43,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.62,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 12.06,
+              "temperatureApparent": 12.06,
+              "weatherCode": 1100,
+              "windDirection": 26.58,
+              "windGust": 6.3,
+              "windSpeed": 4.68
+            }
+          },
+          {
+            "startTime": "2022-04-29T17:00:00Z",
+            "values": {
+              "cloudCover": 18.43,
+              "humidity": 64.88,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.58,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 10.9,
+              "temperatureApparent": 10.9,
+              "weatherCode": 1100,
+              "windDirection": 14.24,
+              "windGust": 6.94,
+              "windSpeed": 4.58
+            }
+          },
+          {
+            "startTime": "2022-04-29T18:00:00Z",
+            "values": {
+              "cloudCover": 14.31,
+              "humidity": 72.32,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.53,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 9.74,
+              "temperatureApparent": 9.74,
+              "weatherCode": 1100,
+              "windDirection": 14.24,
+              "windGust": 7.59,
+              "windSpeed": 4.47
+            }
+          },
+          {
+            "startTime": "2022-04-29T19:00:00Z",
+            "values": {
+              "cloudCover": 10.53,
+              "humidity": 77.38,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.73,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 8.71,
+              "temperatureApparent": 8.71,
+              "weatherCode": 1000,
+              "windDirection": 14.24,
+              "windGust": 7.78,
+              "windSpeed": 4
+            }
+          },
+          {
+            "startTime": "2022-04-29T20:00:00Z",
+            "values": {
+              "cloudCover": 6.75,
+              "humidity": 82.44,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.93,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 7.69,
+              "temperatureApparent": 7.69,
+              "weatherCode": 1000,
+              "windDirection": 16.14,
+              "windGust": 7.97,
+              "windSpeed": 3.52
+            }
+          },
+          {
+            "startTime": "2022-04-29T21:00:00Z",
+            "values": {
+              "cloudCover": 2.96,
+              "humidity": 87.49,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.12,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 6.66,
+              "temperatureApparent": 6.66,
+              "weatherCode": 1000,
+              "windDirection": 16.14,
+              "windGust": 8.16,
+              "windSpeed": 3.05
+            }
+          },
+          {
+            "startTime": "2022-04-29T22:00:00Z",
+            "values": {
+              "cloudCover": 2.8,
+              "humidity": 88.77,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.84,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 6.29,
+              "temperatureApparent": 6.29,
+              "weatherCode": 1000,
+              "windDirection": 16.14,
+              "windGust": 7.3,
+              "windSpeed": 2.72
+            }
+          },
+          {
+            "startTime": "2022-04-29T23:00:00Z",
+            "values": {
+              "cloudCover": 2.64,
+              "humidity": 90.05,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.55,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 5.92,
+              "temperatureApparent": 5.92,
+              "weatherCode": 1000,
+              "windDirection": 5,
+              "windGust": 6.43,
+              "windSpeed": 2.39
+            }
+          },
+          {
+            "startTime": "2022-04-30T00:00:00Z",
+            "values": {
+              "cloudCover": 2.48,
+              "humidity": 91.32,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.27,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 5.55,
+              "temperatureApparent": 5.55,
+              "weatherCode": 1000,
+              "windDirection": 5,
+              "windGust": 5.57,
+              "windSpeed": 2.06
+            }
+          },
+          {
+            "startTime": "2022-04-30T01:00:00Z",
+            "values": {
+              "cloudCover": 8.08,
+              "humidity": 89.72,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1029.07,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 5.59,
+              "temperatureApparent": 5.59,
+              "weatherCode": 1000,
+              "windDirection": 5,
+              "windGust": 5.5,
+              "windSpeed": 2.09
+            }
+          },
+          {
+            "startTime": "2022-04-30T02:00:00Z",
+            "values": {
+              "cloudCover": 13.67,
+              "humidity": 88.12,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.88,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 5.64,
+              "temperatureApparent": 5.64,
+              "weatherCode": 1100,
+              "windDirection": 348.91,
+              "windGust": 5.42,
+              "windSpeed": 2.11
+            }
+          },
+          {
+            "startTime": "2022-04-30T03:00:00Z",
+            "values": {
+              "cloudCover": 19.27,
+              "humidity": 86.51,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.68,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 5.68,
+              "temperatureApparent": 5.68,
+              "weatherCode": 1100,
+              "windDirection": 348.91,
+              "windGust": 5.35,
+              "windSpeed": 2.13
+            }
+          },
+          {
+            "startTime": "2022-04-30T04:00:00Z",
+            "values": {
+              "cloudCover": 32.52,
+              "humidity": 78.26,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.67,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 6.53,
+              "temperatureApparent": 6.53,
+              "weatherCode": 1100,
+              "windDirection": 348.91,
+              "windGust": 5.37,
+              "windSpeed": 2.56
+            }
+          },
+          {
+            "startTime": "2022-04-30T05:00:00Z",
+            "values": {
+              "cloudCover": 45.77,
+              "humidity": 70,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.65,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 7.38,
+              "temperatureApparent": 7.38,
+              "weatherCode": 1101,
+              "windDirection": 15.48,
+              "windGust": 5.4,
+              "windSpeed": 2.99
+            }
+          },
+          {
+            "startTime": "2022-04-30T06:00:00Z",
+            "values": {
+              "cloudCover": 59.02,
+              "humidity": 61.74,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.64,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 8.24,
+              "temperatureApparent": 8.24,
+              "weatherCode": 1101,
+              "windDirection": 15.48,
+              "windGust": 5.42,
+              "windSpeed": 3.41
+            }
+          },
+          {
+            "startTime": "2022-04-30T07:00:00Z",
+            "values": {
+              "cloudCover": 67.1,
+              "humidity": 58.35,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.51,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 9.23,
+              "temperatureApparent": 9.23,
+              "weatherCode": 1102,
+              "windDirection": 15.48,
+              "windGust": 5.33,
+              "windSpeed": 3.51
+            }
+          },
+          {
+            "startTime": "2022-04-30T08:00:00Z",
+            "values": {
+              "cloudCover": 75.18,
+              "humidity": 54.96,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.38,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 10.22,
+              "temperatureApparent": 10.22,
+              "weatherCode": 1001,
+              "windDirection": 19.9,
+              "windGust": 5.25,
+              "windSpeed": 3.6
+            }
+          },
+          {
+            "startTime": "2022-04-30T09:00:00Z",
+            "values": {
+              "cloudCover": 83.25,
+              "humidity": 51.57,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.25,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 11.21,
+              "temperatureApparent": 11.21,
+              "weatherCode": 1001,
+              "windDirection": 19.9,
+              "windGust": 5.16,
+              "windSpeed": 3.69
+            }
+          },
+          {
+            "startTime": "2022-04-30T10:00:00Z",
+            "values": {
+              "cloudCover": 78.55,
+              "humidity": 50.07,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.02,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 11.88,
+              "temperatureApparent": 11.88,
+              "weatherCode": 1001,
+              "windDirection": 19.9,
+              "windGust": 5.29,
+              "windSpeed": 4.01
+            }
+          },
+          {
+            "startTime": "2022-04-30T11:00:00Z",
+            "values": {
+              "cloudCover": 73.84,
+              "humidity": 48.57,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1027.79,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 12.55,
+              "temperatureApparent": 12.55,
+              "weatherCode": 1102,
+              "windDirection": 27.84,
+              "windGust": 5.42,
+              "windSpeed": 4.33
+            }
+          },
+          {
+            "startTime": "2022-04-30T12:00:00Z",
+            "values": {
+              "cloudCover": 69.14,
+              "humidity": 47.07,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1027.56,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 13.23,
+              "temperatureApparent": 13.23,
+              "weatherCode": 1102,
+              "windDirection": 27.84,
+              "windGust": 5.55,
+              "windSpeed": 4.64
+            }
+          },
+          {
+            "startTime": "2022-04-30T13:00:00Z",
+            "values": {
+              "cloudCover": 60.78,
+              "humidity": 47.74,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1027.26,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 13.1,
+              "temperatureApparent": 13.1,
+              "weatherCode": 1101,
+              "windDirection": 27.84,
+              "windGust": 5.56,
+              "windSpeed": 4.72
+            }
+          },
+          {
+            "startTime": "2022-04-30T14:00:00Z",
+            "values": {
+              "cloudCover": 52.42,
+              "humidity": 48.41,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.97,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 12.98,
+              "temperatureApparent": 12.98,
+              "weatherCode": 1101,
+              "windDirection": 13.19,
+              "windGust": 5.57,
+              "windSpeed": 4.8
+            }
+          },
+          {
+            "startTime": "2022-04-30T15:00:00Z",
+            "values": {
+              "cloudCover": 44.07,
+              "humidity": 49.07,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.67,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 12.85,
+              "temperatureApparent": 12.85,
+              "weatherCode": 1101,
+              "windDirection": 13.19,
+              "windGust": 5.59,
+              "windSpeed": 4.87
+            }
+          },
+          {
+            "startTime": "2022-04-30T16:00:00Z",
+            "values": {
+              "cloudCover": 38.2,
+              "humidity": 55.28,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.72,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 11.83,
+              "temperatureApparent": 11.83,
+              "weatherCode": 1101,
+              "windDirection": 13.19,
+              "windGust": 5.76,
+              "windSpeed": 4.55
+            }
+          },
+          {
+            "startTime": "2022-04-30T17:00:00Z",
+            "values": {
+              "cloudCover": 32.32,
+              "humidity": 61.48,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.77,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 10.81,
+              "temperatureApparent": 10.81,
+              "weatherCode": 1100,
+              "windDirection": 8.25,
+              "windGust": 5.93,
+              "windSpeed": 4.24
+            }
+          },
+          {
+            "startTime": "2022-04-30T18:00:00Z",
+            "values": {
+              "cloudCover": 26.45,
+              "humidity": 67.69,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.82,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 9.79,
+              "temperatureApparent": 9.79,
+              "weatherCode": 1100,
+              "windDirection": 8.25,
+              "windGust": 6.1,
+              "windSpeed": 3.92
+            }
+          },
+          {
+            "startTime": "2022-04-30T19:00:00Z",
+            "values": {
+              "cloudCover": 17.75,
+              "humidity": 74.66,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.99,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 8.5,
+              "temperatureApparent": 8.5,
+              "weatherCode": 1100,
+              "windDirection": 8.25,
+              "windGust": 6.09,
+              "windSpeed": 3.41
+            }
+          },
+          {
+            "startTime": "2022-04-30T20:00:00Z",
+            "values": {
+              "cloudCover": 9.04,
+              "humidity": 81.63,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1027.16,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 7.2,
+              "temperatureApparent": 7.2,
+              "weatherCode": 1000,
+              "windDirection": 290.58,
+              "windGust": 6.07,
+              "windSpeed": 2.89
+            }
+          },
+          {
+            "startTime": "2022-04-30T21:00:00Z",
+            "values": {
+              "cloudCover": 0.34,
+              "humidity": 88.61,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1027.33,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 5.91,
+              "temperatureApparent": 5.91,
+              "weatherCode": 1000,
+              "windDirection": 290.58,
+              "windGust": 6.06,
+              "windSpeed": 2.38
+            }
+          },
+          {
+            "startTime": "2022-04-30T22:00:00Z",
+            "values": {
+              "cloudCover": 1.14,
+              "humidity": 88.99,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1027.14,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 5.58,
+              "temperatureApparent": 5.58,
+              "weatherCode": 1000,
+              "windDirection": 290.58,
+              "windGust": 5.16,
+              "windSpeed": 2.17
+            }
+          },
+          {
+            "startTime": "2022-04-30T23:00:00Z",
+            "values": {
+              "cloudCover": 1.94,
+              "humidity": 89.37,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.94,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 5.25,
+              "temperatureApparent": 5.25,
+              "weatherCode": 1000,
+              "windDirection": 348.5,
+              "windGust": 4.25,
+              "windSpeed": 1.97
+            }
+          },
+          {
+            "startTime": "2022-05-01T00:00:00Z",
+            "values": {
+              "cloudCover": 2.75,
+              "humidity": 89.76,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.75,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 4.93,
+              "temperatureApparent": 4.93,
+              "weatherCode": 1000,
+              "windDirection": 348.5,
+              "windGust": 3.35,
+              "windSpeed": 1.76
+            }
+          },
+          {
+            "startTime": "2022-05-01T01:00:00Z",
+            "values": {
+              "cloudCover": 3.39,
+              "humidity": 90.06,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.44,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 4.71,
+              "temperatureApparent": 4.4,
+              "weatherCode": 1000,
+              "windDirection": 348.5,
+              "windGust": 2.95,
+              "windSpeed": 1.71
+            }
+          },
+          {
+            "startTime": "2022-05-01T02:00:00Z",
+            "values": {
+              "cloudCover": 4.04,
+              "humidity": 90.37,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1026.13,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 4.49,
+              "temperatureApparent": 3.88,
+              "weatherCode": 1000,
+              "windDirection": 346.27,
+              "windGust": 2.55,
+              "windSpeed": 1.66
+            }
+          },
+          {
+            "startTime": "2022-05-01T03:00:00Z",
+            "values": {
+              "cloudCover": 4.68,
+              "humidity": 90.67,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.82,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 4.27,
+              "temperatureApparent": 3.36,
+              "weatherCode": 1000,
+              "windDirection": 346.27,
+              "windGust": 2.15,
+              "windSpeed": 1.61
+            }
+          },
+          {
+            "startTime": "2022-05-01T04:00:00Z",
+            "values": {
+              "cloudCover": 14.2,
+              "humidity": 86.9,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.84,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 5.08,
+              "temperatureApparent": 4.47,
+              "weatherCode": 1100,
+              "windDirection": 346.27,
+              "windGust": 2.13,
+              "windSpeed": 1.43
+            }
+          },
+          {
+            "startTime": "2022-05-01T05:00:00Z",
+            "values": {
+              "cloudCover": 23.72,
+              "humidity": 83.12,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.86,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 5.89,
+              "temperatureApparent": 5.59,
+              "weatherCode": 1100,
+              "windDirection": 284.36,
+              "windGust": 2.12,
+              "windSpeed": 1.26
+            }
+          },
+          {
+            "startTime": "2022-05-01T06:00:00Z",
+            "values": {
+              "cloudCover": 33.24,
+              "humidity": 79.35,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.88,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 6.7,
+              "temperatureApparent": 6.7,
+              "weatherCode": 1100,
+              "windDirection": 284.36,
+              "windGust": 2.1,
+              "windSpeed": 1.08
+            }
+          },
+          {
+            "startTime": "2022-05-01T07:00:00Z",
+            "values": {
+              "cloudCover": 42.16,
+              "humidity": 69.69,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.6,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 8.53,
+              "temperatureApparent": 8.53,
+              "weatherCode": 1101,
+              "windDirection": 284.36,
+              "windGust": 2.02,
+              "windSpeed": 1.19
+            }
+          },
+          {
+            "startTime": "2022-05-01T08:00:00Z",
+            "values": {
+              "cloudCover": 51.09,
+              "humidity": 60.02,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.33,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 10.35,
+              "temperatureApparent": 10.35,
+              "weatherCode": 1101,
+              "windDirection": 344.86,
+              "windGust": 1.93,
+              "windSpeed": 1.3
+            }
+          },
+          {
+            "startTime": "2022-05-01T09:00:00Z",
+            "values": {
+              "cloudCover": 60.01,
+              "humidity": 50.36,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.05,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 12.17,
+              "temperatureApparent": 12.17,
+              "weatherCode": 1101,
+              "windDirection": 344.86,
+              "windGust": 1.84,
+              "windSpeed": 1.41
+            }
+          },
+          {
+            "startTime": "2022-05-01T10:00:00Z",
+            "values": {
+              "cloudCover": 53.78,
+              "humidity": 47.33,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1024.53,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 13.04,
+              "temperatureApparent": 13.04,
+              "weatherCode": 1101,
+              "windDirection": 344.86,
+              "windGust": 2.02,
+              "windSpeed": 1.66
+            }
+          },
+          {
+            "startTime": "2022-05-01T11:00:00Z",
+            "values": {
+              "cloudCover": 47.56,
+              "humidity": 44.3,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1024.01,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 13.91,
+              "temperatureApparent": 13.91,
+              "weatherCode": 1101,
+              "windDirection": 325.27,
+              "windGust": 2.2,
+              "windSpeed": 1.91
+            }
+          },
+          {
+            "startTime": "2022-05-01T12:00:00Z",
+            "values": {
+              "cloudCover": 41.33,
+              "humidity": 41.27,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1023.49,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 14.77,
+              "temperatureApparent": 14.77,
+              "weatherCode": 1101,
+              "windDirection": 325.27,
+              "windGust": 2.38,
+              "windSpeed": 2.17
+            }
+          },
+          {
+            "startTime": "2022-05-01T13:00:00Z",
+            "values": {
+              "cloudCover": 45.2,
+              "humidity": 42.12,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1023.13,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 14.43,
+              "temperatureApparent": 14.43,
+              "weatherCode": 1101,
+              "windDirection": 325.27,
+              "windGust": 2.7,
+              "windSpeed": 2.56
+            }
+          },
+          {
+            "startTime": "2022-05-01T14:00:00Z",
+            "values": {
+              "cloudCover": 49.08,
+              "humidity": 42.97,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1022.76,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 14.1,
+              "temperatureApparent": 14.1,
+              "weatherCode": 1101,
+              "windDirection": 309.58,
+              "windGust": 3.02,
+              "windSpeed": 2.95
+            }
+          },
+          {
+            "startTime": "2022-05-01T15:00:00Z",
+            "values": {
+              "cloudCover": 52.95,
+              "humidity": 43.82,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1022.4,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 13.76,
+              "temperatureApparent": 13.76,
+              "weatherCode": 1101,
+              "windDirection": 309.58,
+              "windGust": 3.34,
+              "windSpeed": 3.34
+            }
+          },
+          {
+            "startTime": "2022-05-01T16:00:00Z",
+            "values": {
+              "cloudCover": 59.01,
+              "humidity": 47.8,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1022.21,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 12.56,
+              "temperatureApparent": 12.56,
+              "weatherCode": 1101,
+              "windDirection": 309.58,
+              "windGust": 3.4,
+              "windSpeed": 2.98
+            }
+          },
+          {
+            "startTime": "2022-05-01T17:00:00Z",
+            "values": {
+              "cloudCover": 65.07,
+              "humidity": 51.78,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1022.03,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 11.37,
+              "temperatureApparent": 11.37,
+              "weatherCode": 1102,
+              "windDirection": 306.1,
+              "windGust": 3.46,
+              "windSpeed": 2.61
+            }
+          },
+          {
+            "startTime": "2022-05-01T18:00:00Z",
+            "values": {
+              "cloudCover": 71.13,
+              "humidity": 55.76,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1021.84,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 10.17,
+              "temperatureApparent": 10.17,
+              "weatherCode": 1102,
+              "windDirection": 306.1,
+              "windGust": 3.53,
+              "windSpeed": 2.25
+            }
+          },
+          {
+            "startTime": "2022-05-01T19:00:00Z",
+            "values": {
+              "cloudCover": 80.76,
+              "humidity": 59.07,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1021.61,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 9.32,
+              "temperatureApparent": 9.32,
+              "weatherCode": 1001,
+              "windDirection": 306.1,
+              "windGust": 2.72,
+              "windSpeed": 1.75
+            }
+          },
+          {
+            "startTime": "2022-05-01T20:00:00Z",
+            "values": {
+              "cloudCover": 90.38,
+              "humidity": 62.37,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1021.37,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 8.47,
+              "temperatureApparent": 8.47,
+              "weatherCode": 1001,
+              "windDirection": 235.96,
+              "windGust": 1.92,
+              "windSpeed": 1.25
+            }
+          }
+        ]
+      },
+      {
+        "timestep": "1d",
+        "endTime": "2022-05-01T04:00:00Z",
+        "startTime": "2022-04-24T04:00:00Z",
+        "intervals": [
+          {
+            "startTime": "2022-04-24T04:00:00Z",
+            "values": {
+              "cloudCover": 85.62,
+              "humidity": 88.22,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1010.63,
+              "sunriseTime": "2022-04-24T04:23:00Z",
+              "sunsetTime": "2022-04-24T18:53:00Z",
+              "temperature": 15.69,
+              "temperatureApparent": 15.69,
+              "weatherCode": 1000,
+              "weatherCodeFullDay": 1000,
+              "windDirection": 33.32,
+              "windGust": 15.19,
+              "windSpeed": 6.88
+            }
+          },
+          {
+            "startTime": "2022-04-25T04:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 87.25,
+              "precipitationIntensity": 0.6406,
+              "precipitationProbability": 25,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1017.31,
+              "sunriseTime": "2022-04-25T04:21:00Z",
+              "sunsetTime": "2022-04-25T18:54:00Z",
+              "temperature": 11.68,
+              "temperatureApparent": 11.68,
+              "weatherCode": 1001,
+              "weatherCodeFullDay": 1001,
+              "windDirection": 39.79,
+              "windGust": 11.22,
+              "windSpeed": 4.87
+            }
+          },
+          {
+            "startTime": "2022-04-26T04:00:00Z",
+            "values": {
+              "cloudCover": 97.05,
+              "humidity": 92.51,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 1,
+              "pressureSurfaceLevel": 1023.48,
+              "sunriseTime": "2022-04-26T04:19:00Z",
+              "sunsetTime": "2022-04-26T18:56:00Z",
+              "temperature": 13.81,
+              "temperatureApparent": 13.81,
+              "weatherCode": 1101,
+              "weatherCodeFullDay": 1101,
+              "windDirection": 258.56,
+              "windGust": 10.25,
+              "windSpeed": 4.35
+            }
+          },
+          {
+            "startTime": "2022-04-27T04:00:00Z",
+            "values": {
+              "cloudCover": 90.36,
+              "humidity": 96.67,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1030.41,
+              "sunriseTime": "2022-04-27T04:17:00Z",
+              "sunsetTime": "2022-04-27T18:58:00Z",
+              "temperature": 14.74,
+              "temperatureApparent": 14.74,
+              "weatherCode": 1101,
+              "weatherCodeFullDay": 1101,
+              "windDirection": 103.74,
+              "windGust": 6.73,
+              "windSpeed": 2.87
+            }
+          },
+          {
+            "startTime": "2022-04-28T04:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 92.29,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1033.16,
+              "sunriseTime": "2022-04-28T04:15:00Z",
+              "sunsetTime": "2022-04-28T19:00:00Z",
+              "temperature": 14.62,
+              "temperatureApparent": 14.62,
+              "weatherCode": 1001,
+              "weatherCodeFullDay": 1001,
+              "windDirection": 43.52,
+              "windGust": 10.09,
+              "windSpeed": 4.17
+            }
+          },
+          {
+            "startTime": "2022-04-29T04:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 91.32,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1032.32,
+              "sunriseTime": "2022-04-29T04:13:00Z",
+              "sunsetTime": "2022-04-29T19:01:00Z",
+              "temperature": 13.31,
+              "temperatureApparent": 13.31,
+              "weatherCode": 1001,
+              "weatherCodeFullDay": 1001,
+              "windDirection": 58.39,
+              "windGust": 8.16,
+              "windSpeed": 4.79
+            }
+          },
+          {
+            "startTime": "2022-04-30T04:00:00Z",
+            "values": {
+              "cloudCover": 83.25,
+              "humidity": 90.67,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1028.64,
+              "sunriseTime": "2022-04-30T04:11:00Z",
+              "sunsetTime": "2022-04-30T19:03:00Z",
+              "temperature": 13.23,
+              "temperatureApparent": 13.23,
+              "weatherCode": 1000,
+              "weatherCodeFullDay": 1000,
+              "windDirection": 124.51,
+              "windGust": 6.1,
+              "windSpeed": 4.87
+            }
+          },
+          {
+            "startTime": "2022-05-01T04:00:00Z",
+            "values": {
+              "cloudCover": 100,
+              "humidity": 79.35,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1025.88,
+              "sunriseTime": "2022-05-01T04:09:00Z",
+              "sunsetTime": "2022-05-01T19:05:00Z",
+              "temperature": 14.77,
+              "temperatureApparent": 14.77,
+              "weatherCode": 1101,
+              "weatherCodeFullDay": 1103,
+              "windDirection": 309.15,
+              "windGust": 3.53,
+              "windSpeed": 3.34
+            }
+          }
+        ]
+      },
+      {
+        "timestep": "current",
+        "endTime": "2022-04-24T20:19:00Z",
+        "startTime": "2022-04-24T20:19:00Z",
+        "intervals": [
+          {
+            "startTime": "2022-04-24T20:19:00Z",
+            "values": {
+              "cloudCover": 13,
+              "humidity": 73,
+              "precipitationIntensity": 0,
+              "precipitationProbability": 0,
+              "precipitationType": 0,
+              "pressureSurfaceLevel": 1009.84,
+              "sunriseTime": "2022-04-24T04:23:00Z",
+              "sunsetTime": "2022-04-24T18:53:00Z",
+              "temperature": 9.81,
+              "temperatureApparent": 9.81,
+              "weatherCode": 1100,
+              "windDirection": 22.63,
+              "windGust": 9.63,
+              "windSpeed": 3.88
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "code": 246009,
+      "type": "Missing Time Range",
+      "message": "The timestep is not supported in full for the time range requested.",
+      "meta": { "from": "-6h", "to": "+6h", "timestep": "current" }
+    }
+  ]
+}

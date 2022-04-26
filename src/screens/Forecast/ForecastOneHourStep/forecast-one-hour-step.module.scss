@@ -1,0 +1,43 @@
+@import "~styles/colors";
+
+.panel {
+  padding: 0;
+}
+
+.stepsWrapper {
+  position: relative;
+}
+
+.steps {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.hourForecastItem {
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 13px;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 20px 0 25px -5px $greyShade4,
+    inset -20px 0 25px -5px $greyShade4;
+
+  pointer-events: none;
+}

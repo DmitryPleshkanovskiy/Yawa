@@ -1,0 +1,29 @@
+@import "~styles/responsive";
+
+.forecastOneHourPanel {
+  grid-area: day-forecast;
+}
+
+.forecastOneDayPanel {
+  grid-area: week-forecast;
+}
+
+.layout {
+  display: grid;
+  gap: 15px;
+  padding: 15px;
+
+  @include respond-to(desktop) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "current day-forecast"
+      "week-forecast week-forecast";
+  }
+
+  @include respond-to(mobile) {
+    grid-template-areas:
+      "current"
+      "day-forecast"
+      "week-forecast";
+  }
+}
