@@ -49,7 +49,9 @@ const NavBar = () => {
               >
                 <i className="fas fa-user" />
 
-                <span className={styles.settingsNavItem}>My settings</span>
+                <span className={styles.settingsNavItem}>
+                  Location settings
+                </span>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
