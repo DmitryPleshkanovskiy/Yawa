@@ -1,0 +1,17 @@
+.weatherMapScreenContainer {
+  flex: 1;
+}
+// TODO: Move colors to vars
+
+.clouds,
+.precipitation {
+  font-weight: bold;
+}
+
+.clouds {
+  color: gray;
+}
+
+.precipitation {
+  color: green;
+}

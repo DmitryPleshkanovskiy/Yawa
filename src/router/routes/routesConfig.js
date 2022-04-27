@@ -10,7 +10,7 @@ const routesConfig = [
   {
     path: routes.mapScreen,
     exact: true,
-    element: lazy(() => import("../../screens/Map")),
+    element: lazy(() => import("../../screens/WeatherMap")),
   },
   {
     path: routes.settingsScreen,
