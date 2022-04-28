@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 // Global store
 import { useStore } from "store";
+
+// Custom hooks
+import { useUserLocation } from "hooks";
 
 // Service
 import WeatherApiService from "api/weatherApiService";
 
 // Components
-import { Container } from "components/simple";
+import { Container, ErrorBoundary } from "components/simple";
 
 import CurrentWeather from "./CurrentWeather";
 import ForecastOneDayStep from "./ForecastOneDayStep";
@@ -16,18 +19,20 @@ import ForecastOneHourStep from "./ForecastOneHourStep";
 // Styles
 import styles from "./forecast.module.scss";
 
-// Default to Amsterdam coordinates
-const defaultUserLocation = { lat: 52.379189, lon: 4.899431 };
-
 const weatherApiService = new WeatherApiService();
 
 export default function Forecast() {
   const {
-    state: { forecastData, isForecastDataLoading, forecastDataError },
+    state: {
+      // Forecast data
+      forecastData,
+      isForecastDataLoading,
+      forecastDataError,
+    },
     actions,
   } = useStore();
 
-  const [userLocation, setUserLocation] = useState(null);
+  const { userLocation } = useUserLocation();
 
   const fetchForecastDataRequest = () => {
     actions.fetchForecastDataRequest();
@@ -36,34 +41,12 @@ export default function Forecast() {
       .getTimelines(userLocation)
       .then((res) => actions.fetchForecastDataSuccess(res))
       .catch((err) => {
-        // TODO: Replace with notification
-        alert(err);
+        // TODO: Replace with notification component
+        // eslint-disable-next-line no-console
+        console.error(err);
         actions.fetchForecastDataFailure(err);
       });
   };
-
-  useEffect(() => {
-    const restoredUserLocation = localStorage.getItem("userLocation");
-    if (restoredUserLocation) {
-      setUserLocation(restoredUserLocation);
-      fetchForecastDataRequest(restoredUserLocation);
-    } else {
-      window?.navigator?.geolocation?.getCurrentPosition(
-        (data) => {
-          const { latitude, longitude } = data?.coords || {};
-          setUserLocation({
-            lat: latitude,
-            lon: longitude,
-          });
-        },
-        (error) => {
-          setUserLocation(defaultUserLocation);
-          // TODO: show message/notification to enable geolocation
-          console.log(error);
-        }
-      );
-    }
-  }, []);
 
   useEffect(() => {
     if (userLocation) {
@@ -79,7 +62,7 @@ export default function Forecast() {
     isForecastDataLoading || (!forecastData && !forecastDataError);
 
   return (
-    <>
+    <ErrorBoundary>
       {!forecastDataError ? (
         <Container className={styles.layout}>
           <CurrentWeather
@@ -101,6 +84,6 @@ export default function Forecast() {
         // TODO: Add Alert component
         <div>Alert {JSON.stringify(forecastDataError)}</div>
       )}
-    </>
+    </ErrorBoundary>
   );
 }
