@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import { defaultUserLocation } from "screens/Forecast/Forecast";
-
-// Store
-import { useStore } from "store";
-
 // Hooks
 import { useUserLocation } from "hooks";
 
@@ -34,20 +29,6 @@ export default function Settings() {
   });
 
   useEffect(() => {
-    // if (!userLocation) {
-    //   let parsedUserLocation;
-    //   try {
-    //     parsedUserLocation = JSON.parse(localStorage.getItem("userLocation"));
-    //   } catch (error) {
-    //     parsedUserLocation = defaultUserLocation;
-    //   }
-    //   setState((prevState) => ({
-    //     ...prevState,
-    //     ...parsedUserLocation,
-    //   }));
-    //   actions.setUserLocation(parsedUserLocation);
-    // }
-
     setState((prevState) => ({
       ...prevState,
       lat: userLocation?.lat,
@@ -87,35 +68,6 @@ export default function Settings() {
           isLocalLocationLoading: false,
         }));
       });
-    //   setState((prevState) => ({ ...prevState, isLocationLoading: true }));
-    //   window?.navigator?.geolocation?.getCurrentPosition(
-    //     (data) => {
-    //       const { latitude, longitude } = data?.coords || {};
-    //       setState((prevState) => ({
-    //         ...prevState,
-    //         lat: latitude,
-    //         lon: longitude,
-    //       }));
-    //       actions.setUserLocation({
-    //         lat: latitude,
-    //         lon: longitude,
-    //       });
-    //       localStorage.setItem(
-    //         "userLocation",
-    //         JSON.stringify({
-    //           lat: latitude,
-    //           lon: longitude,
-    //         })
-    //       );
-    //       setState((prevState) => ({ ...prevState, isLocationLoading: false }));
-    //     },
-    //     (error) => {
-    //       setState((prevState) => ({ ...prevState, isLocationLoading: false }));
-    //       actions.setUserLocation(userLocation);
-    //       // TODO: show message/notification to enable geolocation
-    //       console.log(error);
-    //     }
-    //   );
   };
 
   const handleSetCoordinates = (coord) => {
