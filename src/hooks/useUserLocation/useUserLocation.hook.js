@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { defaultUserLocation } from "screens/Forecast/Forecast";
+import { defaultUserLocation } from "config/index";
 
 export const useUserLocation = () => {
   const [state, setState] = useState({
