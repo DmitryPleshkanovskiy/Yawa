@@ -12,7 +12,11 @@ The forecast screen displays the current weather, a detailed 24-hour forecast, a
 
 The weather map displays two layers - a layer of cloudiness and precipitation intensity.
 
-On the settings screen, you can set your location for which the forecast and map will be displayed.
+On the settings screen, you can set your location for which the forecast and map will be displayed. 
+```If the user does not give permission to get the location or does not set it manually, the location will be automatically set to Amsterdam.```
+
+Also be carefull, the [Tomorrow.io](https://tomorrow.io/) freemium plan limit the count of requests to ```500 per day```, ```25 per hour``` and ```3 per second```.
+With active use, you can reach the limit pretty quickly.
 
 Demonstrated working with basic react concepts (such as reusable components, react hooks, context api, HOC, lazy loading etc.), working with the weather api, browser api and third-party libraries. The design is based on the bootstrap library, SCSS modules are used. The map is implemented using the leaflet opensource library.
 
