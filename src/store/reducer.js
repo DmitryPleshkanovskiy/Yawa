@@ -1,14 +1,21 @@
-// Fetch forecast data
 import {
+  // Fetch forecast data
   FETCH_FORECAST_DATA_REQUEST,
   FETCH_FORECAST_DATA_SUCCESS,
   FETCH_FORECAST_DATA_FAILURE,
+
+  // User location
+  SET_USER_LOCATION,
 } from "./constants";
 
 export const initialState = {
+  // Forecast data
   forecastData: null,
   isForecastDataLoading: false,
   forecastDataError: null,
+
+  // User location
+  userLocation: null,
 };
 
 const reducer = (state, { type, payload }) => {
@@ -33,6 +40,14 @@ const reducer = (state, { type, payload }) => {
         isForecastDataLoading: false,
       };
     // === END Fetch forecast data ===
+
+    // === User location ===
+    case SET_USER_LOCATION:
+      return {
+        ...state,
+        userLocation: payload,
+      };
+    // === END User location ===
 
     default:
       return state;
