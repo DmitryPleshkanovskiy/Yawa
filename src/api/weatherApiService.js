@@ -2,7 +2,7 @@ import moment from "moment";
 import queryString from "query-string";
 
 class WeatherApiService {
-  _apiBase = "https://api.tomorrow.io/v4";
+  _apiBase = process.env.REACT_APP_WEATHER_API_URL;
 
   // eslint-disable-next-line class-methods-use-this
   async getData(url) {
