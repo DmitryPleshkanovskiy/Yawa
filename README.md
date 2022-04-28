@@ -1,6 +1,26 @@
 # Yet Another Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple weather app made using the tomorrow.io API. It consists of three main screens - the forecast screen, the current weather map and the settings screen.
+
+It's called YAWA which stands for "Yet Another Weather App'.
+
+Demo stage server: [dev.yawa.dpserver.org](https://dev.yawa.dpserver.org/)
+
+To run the application locally you need to fill in the ```.env``` file with the api address and access key values. See ```.env.example``` file.
+
+The forecast screen displays the current weather, a detailed 24-hour forecast, and a general 7-day forecast.
+
+The weather map displays two layers - a layer of cloudiness and precipitation intensity.
+
+On the settings screen, you can set your location for which the forecast and map will be displayed.
+
+Demonstrated working with basic react concepts (such as reusable components, react hooks, context api, HOC, lazy loading etc.), working with the weather api, browser api and third-party libraries. The design is based on the bootstrap library, SCSS modules are used. The map is implemented using the leaflet opensource library.
+
+Auto-deploy is also implemented using the СI/СD pipelines of the gitlab.com platform.
+
+The app is still a bit raw. In some places you can find TODO comments describing possible improvements and new features.
+
+
 
 ## Available Scripts
 

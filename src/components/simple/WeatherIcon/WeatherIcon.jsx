@@ -5,8 +5,10 @@ import styles from "./weather-icon.module.scss";
 
 import { weatherCodeMap } from "./weatherCodesMap";
 
-export default function WeatherIcon({ code, iconSize, showDescription }) {
-  const { icon, color, description } = weatherCodeMap?.weatherCode[code] || {
+export default function WeatherIcon({ code, iconSize, time, showDescription }) {
+  const { icon, color, description } = weatherCodeMap?.weatherCode[code][
+    time
+  ] || {
     icon: "na",
     color: "shadow",
     description: "N/A",
@@ -36,11 +38,13 @@ export default function WeatherIcon({ code, iconSize, showDescription }) {
 WeatherIcon.propTypes = {
   code: PropTypes.number,
   iconSize: PropTypes.string,
+  time: PropTypes.string,
   showDescription: PropTypes.bool,
 };
 
 WeatherIcon.defaultProps = {
   code: 0,
   iconSize: "sm",
+  time: "day",
   showDescription: true,
 };

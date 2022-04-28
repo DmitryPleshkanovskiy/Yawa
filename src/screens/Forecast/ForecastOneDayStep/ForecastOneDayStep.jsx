@@ -5,6 +5,9 @@ import PropTypes from "prop-types";
 // Libraries
 import moment from "moment";
 
+// Helpers
+import { precipitationTypes } from "../forecast.helpers";
+
 // Components
 import { Panel, WeatherIcon } from "components/simple";
 
@@ -28,6 +31,10 @@ export default function ForecastOneDayStep({
               windSpeed,
               windDirection,
               humidity,
+              pressureSurfaceLevel,
+              precipitationType,
+              precipitationProbability,
+              precipitationIntensity,
             } = item?.values || {};
 
             return (
@@ -50,22 +57,46 @@ export default function ForecastOneDayStep({
                     showDescription={false}
                   />
                 </div>
-                <div className={styles.tempInfo}>
-                  <i className="wi wi-thermometer" />{" "}
-                  {Math.round(temperature * 10) / 10}{" "}
-                  <i className="wi wi-celsius" />
-                </div>
-                <div className={styles.windInfo}>
-                  <i className="wi wi-strong-wind" /> {Math.round(windSpeed)}{" "}
-                  m/s{" "}
-                  <i
-                    className={`wi wi-wind towards-${Math.round(
-                      (180 + windDirection) % 360
-                    )}-deg`}
-                  />
-                </div>
-                <div className={styles.humInfo}>
-                  <i className="wi wi-humidity" /> {Math.round(humidity)}%
+                <div className={styles.forecastDetails}>
+                  <div className={styles.tempInfo}>
+                    <i className="wi wi-thermometer" />{" "}
+                    {Math.round(temperature * 10) / 10}{" "}
+                    <i className="wi wi-celsius" />
+                  </div>
+                  <div className={styles.windInfo}>
+                    <i className="wi wi-strong-wind" /> {Math.round(windSpeed)}{" "}
+                    m/s{" "}
+                    <i
+                      className={`wi wi-wind towards-${Math.round(
+                        (180 + windDirection) % 360
+                      )}-deg`}
+                    />
+                  </div>
+                  <div className={styles.humInfo}>
+                    <i className="wi wi-humidity" /> {Math.round(humidity)}%
+                  </div>
+                  <div className="">
+                    <i className="wi wi-barometer" />{" "}
+                    {Math.round(pressureSurfaceLevel)}
+                    hPa
+                  </div>
+                  <div className={styles.precipitation}>
+                    <div>
+                      {precipitationType === 0 ? (
+                        <>
+                          No <i className="wi wi-raindrop" />
+                        </>
+                      ) : (
+                        precipitationTypes[precipitationType]
+                      )}
+                    </div>
+                    {precipitationType === 0 ? null : (
+                      <div style={{ marginLeft: 10 }}>
+                        <i className="wi wi-raindrop" />{" "}
+                        {precipitationProbability}%
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             );

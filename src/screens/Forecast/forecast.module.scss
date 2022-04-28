@@ -1,4 +1,5 @@
 @import "~styles/responsive";
+@import "~styles/colors";
 
 .forecastOneHourPanel {
   grid-area: day-forecast;
@@ -26,4 +27,10 @@
       "day-forecast"
       "week-forecast";
   }
+}
+
+.alert {
+  padding: 15px;
+  color: $greyShade4;
+  background: $alertColor;
 }
