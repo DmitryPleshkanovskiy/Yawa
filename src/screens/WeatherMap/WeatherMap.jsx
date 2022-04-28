@@ -1,13 +1,18 @@
 import React from "react";
 
+// Custom hooks
+import { useUserLocation } from "hooks";
+
 // Components
 import { Map } from "components/complex";
-import { ErrorBoundary } from "components/simple";
+import { ErrorBoundary, Loader } from "components/simple";
 
 // Styles
 import styles from "./weather-map.module.scss";
 
 export default function WeatherMap() {
+  const { userLocation, isUserLocationLoading } = useUserLocation();
+
   const API_URL = process.env.REACT_APP_WEATHER_API_URL;
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
@@ -40,23 +45,30 @@ export default function WeatherMap() {
   return (
     <div className={styles.weatherMapScreenContainer}>
       <ErrorBoundary>
-        <Map
-          layers={weatherDataLayers}
-          legend={
-            <>
-              Current weather conditions map. It represents{" "}
-              <span className={styles.clouds}>clouds</span> and{" "}
-              <span className={styles.precipitation}>
-                precipitation intensity
-              </span>{" "}
-              data.
-            </>
-          }
-          moveMapDisable
-          initialZoom={6}
-          minZoom={6}
-          maxZoom={10}
-        />
+        {!userLocation || isUserLocationLoading ? (
+          <div className={styles.loadingContainer}>
+            <Loader variant="dark" />
+          </div>
+        ) : (
+          <Map
+            layers={weatherDataLayers}
+            center={userLocation ? { ...userLocation } : null}
+            legend={
+              <>
+                Current weather conditions map. It represents{" "}
+                <span className={styles.clouds}>clouds</span> and{" "}
+                <span className={styles.precipitation}>
+                  precipitation intensity
+                </span>{" "}
+                data.
+              </>
+            }
+            moveMapDisable
+            initialZoom={6}
+            minZoom={6}
+            maxZoom={10}
+          />
+        )}
       </ErrorBoundary>
     </div>
   );

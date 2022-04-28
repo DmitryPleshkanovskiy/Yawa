@@ -1,7 +1,12 @@
+@import "~styles/colors";
+
 .weatherMapScreenContainer {
   flex: 1;
 }
-// TODO: Move colors to vars
+
+.loadingContainer {
+  margin-top: 15px;
+}
 
 .clouds,
 .precipitation {
@@ -9,9 +14,9 @@
 }
 
 .clouds {
-  color: gray;
+  color: $cloudsColor;
 }
 
 .precipitation {
-  color: green;
+  color: $precipitationColor;
 }
