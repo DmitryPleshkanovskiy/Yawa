@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import moment from "moment";
+
 // Helpers
 import { precipitationTypes } from "../forecast.helpers";
 
@@ -9,7 +11,6 @@ import { Panel, WeatherIcon } from "components/simple";
 
 // Styles
 import styles from "./current-weather.module.scss";
-import moment from "moment";
 
 export default function CurrentWeather({ weatherData, isLoading }) {
   const {
@@ -97,7 +98,8 @@ export default function CurrentWeather({ weatherData, isLoading }) {
               </div>
               <i className="wi wi-raindrop" /> {precipitationProbability}%
               <div>
-                <i className="wi wi-raindrop" /> {precipitationIntensity}
+                <i className="wi wi-raindrop" />{" "}
+                {Math.round(precipitationIntensity * 100) / 100}
                 mm/hr
               </div>
             </div>
