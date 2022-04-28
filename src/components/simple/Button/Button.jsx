@@ -11,6 +11,7 @@ export default function Button(props) {
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...buttonProps}
       variant={variant}
+      disabled={isLoading}
     >
       {!isLoading ? children : <Loader variant={loaderVariant} />}
     </BootstrapButton>

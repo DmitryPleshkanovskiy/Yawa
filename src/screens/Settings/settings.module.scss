@@ -1,0 +1,37 @@
+@import "~styles/colors";
+
+.settingsContainer {
+  display: flex;
+  justify-content: center;
+
+  .settingsPanel {
+    width: 500px;
+  }
+}
+
+.subTitleWrapper {
+  margin-bottom: 15px;
+}
+
+.deviceLocationButton {
+  width: 100%;
+  height: 38px;
+}
+
+.mapWrapper {
+  height: 300px;
+  display: "flex";
+}
+
+.mapHint {
+  padding: 0 15px;
+  margin-top: 5px;
+
+  color: $greyShade2;
+  text-align: center;
+  font-size: 13px;
+}
+
+.saveButton {
+  width: 100%;
+}
