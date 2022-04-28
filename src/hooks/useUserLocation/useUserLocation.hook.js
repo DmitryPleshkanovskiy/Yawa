@@ -67,7 +67,7 @@ export const useUserLocation = () => {
           ...prevState,
           userLocation: {
             lat: defaultUserLocation.lat,
-            lon: defaultUserLocation.longitude,
+            lon: defaultUserLocation.lon,
           },
           isUserLocationLoading: false,
           userLocationError: error,
