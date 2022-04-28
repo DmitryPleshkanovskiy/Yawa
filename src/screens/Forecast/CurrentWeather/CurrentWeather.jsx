@@ -1,17 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Helpers
+import { precipitationTypes } from "../forecast.helpers";
+
+// Components
 import { Panel, WeatherIcon } from "components/simple";
 
+// Styles
 import styles from "./current-weather.module.scss";
-
-const precipitationTypes = {
-  0: "N/A",
-  1: "Rain",
-  2: "Snow",
-  3: "Freezing Rain",
-  4: "Ice Pellets",
-};
+import moment from "moment";
 
 export default function CurrentWeather({ weatherData, isLoading }) {
   const {
@@ -25,6 +23,8 @@ export default function CurrentWeather({ weatherData, isLoading }) {
     precipitationIntensity,
     precipitationProbability,
     precipitationType,
+    sunriseTime,
+    sunsetTime,
   } = weatherData?.intervals?.length
     ? weatherData?.intervals[0]?.values
     : {
@@ -35,6 +35,8 @@ export default function CurrentWeather({ weatherData, isLoading }) {
         windSpeed: 0,
         humidity: 0,
         pressureSurfaceLevel: 0,
+        sunriseTime: moment().toISOString(),
+        sunsetTime: moment().toISOString(),
       };
 
   return (
@@ -58,7 +60,8 @@ export default function CurrentWeather({ weatherData, isLoading }) {
             </div>
             <div>
               <div>
-                <i className="wi wi-strong-wind" /> {windSpeed} m/s{" "}
+                <i className="wi wi-strong-wind" />{" "}
+                {Math.round(windSpeed * 10) / 10} m/s{" "}
                 <i
                   className={`wi wi-wind towards-${Math.round(
                     (180 + windDirection) % 360
@@ -70,7 +73,15 @@ export default function CurrentWeather({ weatherData, isLoading }) {
 
           <div className={styles.mainValue}>
             <div>
-              <WeatherIcon code={weatherCode} iconSize="lg" />
+              <WeatherIcon
+                code={weatherCode}
+                iconSize="lg"
+                time={
+                  moment().isBetween(moment(sunriseTime), moment(sunsetTime))
+                    ? "day"
+                    : "night"
+                }
+              />
             </div>
           </div>
           <div className={styles.columnRight}>
@@ -118,6 +129,8 @@ CurrentWeather.propTypes = {
           precipitationIntensity: PropTypes.number,
           precipitationProbability: PropTypes.number,
           precipitationType: PropTypes.number,
+          sunriseTime: PropTypes.string,
+          sunsetTime: PropTypes.string,
         }),
       })
     ),

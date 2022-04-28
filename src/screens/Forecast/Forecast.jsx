@@ -82,7 +82,9 @@ export default function Forecast() {
         </Container>
       ) : (
         // TODO: Add Alert component
-        <div>Alert {JSON.stringify(forecastDataError)}</div>
+        <div className={styles.alert}>
+          Alert {JSON.stringify(forecastDataError)}
+        </div>
       )}
     </ErrorBoundary>
   );
