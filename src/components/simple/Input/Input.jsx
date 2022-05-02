@@ -1,65 +1,30 @@
-/* eslint-disable react/prop-types */
-import React, { useState, useEffect, useRef } from "react";
-import { Form } from "react-bootstrap";
+import React from "react";
 import PropTypes from "prop-types";
+
+import { Form } from "react-bootstrap";
 
 import styles from "./input.module.scss";
 
 const Input = ({
-  containerClass,
-  inputClass = "",
-  error,
-  type = "",
-  onChange,
-  invalid,
-  fieldError,
-  onClick,
-  onBlur,
-  setFocus,
   label,
+  containerClass,
+  error,
+  onChange,
+  onClick,
   labelClass,
   placeholder,
-  tooltipTitle,
-  tooltipDescription,
   ...inputProps
 }) => {
-  const [isFocused, setIsFocused] = useState(!!placeholder);
-
-  const handleFocus = () => {
-    setIsFocused(true);
-  };
-
-  const handleBlur = () => {
-    if (!placeholder) {
-      setIsFocused(false);
-    }
-  };
-
   const handleChange = ({ target: { name, value, files } }) => {
     onChange(name, value, files);
   };
 
-  const input = useRef(null);
-
-  useEffect(() => {
-    if (setFocus) {
-      input.current.focus();
-    }
-  }, [setFocus]);
-
-  const stop = (e) => {
-    e.stopPropagation();
-  };
-
   return (
-    <div className={`${styles["input-container"]} ${containerClass}`}>
+    <div className={`${styles.inputContainer} ${containerClass}`}>
       {label && (
-        // eslint-disable-next-line jsx-a11y/no-static-element-interactions
-        <div onClick={stop}>
-          <Form.Label className={`${styles["input-label"]} ${labelClass}`}>
-            {label}
-          </Form.Label>
-        </div>
+        <Form.Label className={`${styles.inputLabel} ${labelClass}`}>
+          {label}
+        </Form.Label>
       )}
 
       <div>
@@ -67,14 +32,11 @@ const Input = ({
           type="text"
           // eslint-disable-next-line react/jsx-props-no-spreading
           {...inputProps}
+          onFocus={(e) => e.preventDefault()}
           onChange={handleChange}
           onClick={onClick}
-          onBlur={() => {
-            handleBlur();
-            onBlur();
-          }}
-          onFocus={handleFocus}
           placeholder={placeholder}
+          data-testid="input"
         />
         <Form.Text className={styles.error}>{error}</Form.Text>
       </div>
@@ -85,37 +47,23 @@ const Input = ({
 Input.propTypes = {
   label: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  type: PropTypes.string,
   error: PropTypes.string,
-  onChange: PropTypes.func,
   containerClass: PropTypes.string,
   labelClass: PropTypes.string,
-  inputClass: PropTypes.string,
-  fieldError: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string),
-    PropTypes.shape({}),
-  ]),
-  invalid: PropTypes.bool,
   onClick: PropTypes.func,
-  onBlur: PropTypes.func,
-  setFocus: PropTypes.bool,
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
 };
 
 Input.defaultProps = {
-  value: "",
   label: "",
+  value: "",
   error: "",
   containerClass: "",
-  type: "text",
   labelClass: "",
-  inputClass: "",
-  fieldError: "",
-  invalid: false,
   onClick: () => {},
-  onBlur: () => {},
   onChange: () => {},
-  setFocus: false,
+  placeholder: "",
 };
 
 export default Input;
