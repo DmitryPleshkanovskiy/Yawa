@@ -5,8 +5,12 @@ import styles from "./container.module.scss";
 
 export default function Container({ children, className, ...props }) {
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <div className={`${styles.container} ${className}`} {...props}>
+    <div
+      className={`${styles.container} ${className}`}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
+      data-testid="container"
+    >
       {children}
     </div>
   );
