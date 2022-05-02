@@ -1,33 +1,28 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import styles from "./error-boundary.module.scss";
 
 export default class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hasError: false, error: "", errorInfo: "" };
+    this.state = { hasError: false, errorInfo: "" };
   }
 
-  // eslint-disable-next-line no-unused-vars
-  static getDerivedStateFromError(error) {
-    // Update state so the next render will show the fallback UI.
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
 
-  // eslint-disable-next-line no-unused-vars
   componentDidCatch(error, errorInfo) {
-    this.setState({ error, errorInfo });
-    // You can also log the error to an error reporting service
-    // logErrorToMyService(error, errorInfo);
+    this.setState({ errorInfo });
   }
 
   render() {
-    const { hasError, error, errorInfo } = this.state;
+    const { hasError, errorInfo } = this.state;
 
     if (hasError) {
-      // You can render any custom fallback UI
       return (
-        <div className={styles.error}>
+        <div className={styles.error} data-testid="error-message">
           Something went wrong. Try to reload the page or contact our support.{" "}
           <div style={{ maxHeight: 100, overflowY: "auto" }}>
             <code>{JSON.stringify(errorInfo)}</code>
@@ -36,7 +31,14 @@ export default class ErrorBoundary extends React.Component {
       );
     }
 
-    // eslint-disable-next-line react/prop-types
     return this.props.children;
   }
 }
+
+ErrorBoundary.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.number]),
+};
+
+ErrorBoundary.defaultProps = {
+  children: null,
+};

@@ -6,8 +6,12 @@ import Loader from "../Loader";
 
 export default function Panel({ className, children, ...props }) {
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <div className={`${styles.panel} ${className}`} {...props}>
+    <div
+      className={`${styles.panel} ${className}`}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
+      data-testid="panel"
+    >
       {children}
     </div>
   );
@@ -28,7 +32,9 @@ Panel.defaultProps = {
 };
 
 Panel.Title = ({ className, children }) => (
-  <div className={`${styles.title} ${className}`}>{children}</div>
+  <div className={`${styles.title} ${className}`} data-testid="panel-title">
+    {children}
+  </div>
 );
 
 Panel.Title.propTypes = {
@@ -46,7 +52,7 @@ Panel.Title.defaultProps = {
 };
 
 Panel.Body = ({ className, isLoading, children }) => (
-  <div className={`${styles.body} ${className}`}>
+  <div className={`${styles.body} ${className}`} data-testid="panel-body">
     {isLoading ? <Loader variant="dark" /> : children}
   </div>
 );
