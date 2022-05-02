@@ -84,6 +84,13 @@ export default function Settings() {
     // if valid
     const newUserLocation = { lat, lon };
     setUserLocation(newUserLocation);
+
+    // TODO: Add successfull notification on save
+  };
+
+  const mapCenter = {
+    lat: validators.isLatitude(+lat) ? +lat : 0,
+    lon: validators.isLongitude(+lon) ? +lon : 0,
   };
 
   return (
@@ -112,7 +119,7 @@ export default function Settings() {
           <div className={styles.mapWrapper}>
             <ErrorBoundary>
               <Map
-                center={{ lat, lon }}
+                center={mapCenter}
                 initialZoom={6}
                 minZoom={1}
                 maxZoom={19}
