@@ -1,42 +1,15 @@
 @import "~styles/colors";
 @import "~styles/typography";
 
-.input-container {
+.inputContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
   position: relative;
-
-  .input-wrap {
-    position: relative;
-  }
 }
 
-.label-wrapper {
-  display: flex;
-  position: absolute;
-  top: 20px;
-  text-align: left;
-  @include font(Arial, 24px, 24px, normal);
-  color: #808080 !important;
-  margin-bottom: 0;
-  z-index: 1;
-  transition: all 0.3s;
-  pointer-events: none;
-
-  &-active {
-    top: -13px;
-    @include font(Arial, 13px, 16px, normal);
-  }
-}
-
-.info-label {
-  margin-left: 10px;
-  pointer-events: initial !important;
-}
-
-.input-label {
+.inputLabel {
   pointer-events: none;
 }
 
@@ -56,14 +29,6 @@
   @include font(Arial, 24px, 24px, normal);
   font-size: 24px !important;
   line-height: 24px !important;
-  // color: $primaryTextColor !important;
-
-  &:-webkit-autofill,
-  &:-webkit-autofill:hover,
-  &:-webkit-autofill:focus,
-  &:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 40px white inset !important;
-  }
 
   &:focus,
   &:active {
