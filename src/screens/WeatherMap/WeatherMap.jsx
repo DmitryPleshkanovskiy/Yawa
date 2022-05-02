@@ -38,7 +38,11 @@ export default function WeatherMap() {
     },
     {
       // Precipitation intensity
-      url: `${API_URL}/map/tile/${LOCKED_ZOOM}/{x}/{y}/${weatherLayersTypes.precipitationIntensity}/${TIMESTAMP}.png?apikey=${API_KEY}`,
+      url: `${API_URL}/map/tile/${4}/3/{y}/${
+        weatherLayersTypes.precipitationIntensity
+      }/${TIMESTAMP}.png?apikey=${API_KEY}`,
+      attribution:
+        '&copy; <a href="https://www.tomorrow.io/weather-api">Powered by Tomorrow.io</a>',
     },
   ];
 
