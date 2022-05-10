@@ -58,13 +58,11 @@ export default function ForecastOneHourStep({
                     <div>
                       <TemperatureWidget temperature={temperature} />
                     </div>
-                    <div>
-                      <div>
-                        <WindWidget
-                          windSpeed={windSpeed}
-                          windDirection={windDirection}
-                        />
-                      </div>
+                    <div className={styles.windWidgetContainer}>
+                      <WindWidget
+                        windSpeed={windSpeed}
+                        windDirection={windDirection}
+                      />
                     </div>
                   </div>
                 </div>

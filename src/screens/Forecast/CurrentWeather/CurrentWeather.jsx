@@ -12,6 +12,7 @@ import {
   TemperatureWidget,
   WindWidget,
   HumidityWidget,
+  PressureWidget,
 } from "components/simple/WeatherWidgets";
 
 // Styles
@@ -101,10 +102,7 @@ export default function CurrentWeather({ weatherData, isLoading }) {
             </div>
 
             <div>
-              {/* TODO: Replace with widget */}
-              <i className="wi wi-barometer" />{" "}
-              {Math.round(pressureSurfaceLevel)}
-              hPa
+              <PressureWidget pressure={pressureSurfaceLevel} />
             </div>
           </div>
         </div>

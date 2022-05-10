@@ -11,6 +11,7 @@ import { precipitationTypes } from "../forecast.helpers";
 import { Panel, WeatherIcon } from "components/simple";
 import {
   HumidityWidget,
+  PressureWidget,
   TemperatureWidget,
   WindWidget,
 } from "components/simple/WeatherWidgets";
@@ -38,7 +39,6 @@ export default function ForecastOneDayStep({
               pressureSurfaceLevel,
               precipitationType,
               precipitationProbability,
-              precipitationIntensity,
             } = item?.values || {};
 
             const dateNumber = moment(item?.startTime).format("DD");
@@ -74,11 +74,8 @@ export default function ForecastOneDayStep({
                   <div className={styles.humInfo}>
                     <HumidityWidget humidity={humidity} />
                   </div>
-                  <div className="">
-                    {/* TODO: Move to separate component */}
-                    <i className="wi wi-barometer" />{" "}
-                    {Math.round(pressureSurfaceLevel)}
-                    hPa
+                  <div>
+                    <PressureWidget pressure={pressureSurfaceLevel} />
                   </div>
                   <div className={styles.precipitation}>
                     {/* TODO: Move to separate component */}
@@ -92,6 +89,7 @@ export default function ForecastOneDayStep({
                       )}
                     </div>
                     {/* TODO: Move to separate component */}
+
                     {precipitationType === 0 ? null : (
                       <div style={{ marginLeft: 10 }}>
                         <i className="wi wi-raindrop" />{" "}
@@ -123,7 +121,6 @@ ForecastOneDayStep.propTypes = {
           windSpeed: PropTypes.number,
           humidity: PropTypes.number,
           pressureSurfaceLevel: PropTypes.number,
-          precipitationIntensity: PropTypes.number,
           precipitationProbability: PropTypes.number,
           precipitationType: PropTypes.number,
         }),
