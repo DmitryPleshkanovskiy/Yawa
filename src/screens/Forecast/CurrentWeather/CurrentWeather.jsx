@@ -11,6 +11,7 @@ import { Panel, WeatherIcon } from "components/simple";
 import {
   TemperatureWidget,
   WindWidget,
+  HumidityWidget,
 } from "components/simple/WeatherWidgets";
 
 // Styles
@@ -44,6 +45,7 @@ export default function CurrentWeather({ weatherData, isLoading }) {
         sunsetTime: moment().toISOString(),
       };
 
+  // TODO: Move to helpers
   const isNowDayOrNight = () =>
     moment().isBetween(moment(sunriseTime), moment(sunsetTime))
       ? "day"
@@ -79,9 +81,8 @@ export default function CurrentWeather({ weatherData, isLoading }) {
             </div>
           </div>
           <div className={styles.columnRight}>
-            {/* TODO: Replace with widget */}
             <div className={styles.humidity}>
-              <i className="wi wi-humidity" /> {humidity}%
+              <HumidityWidget humidity={humidity} />
             </div>
 
             <div className={styles.precipitation}>

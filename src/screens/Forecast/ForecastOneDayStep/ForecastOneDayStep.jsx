@@ -10,6 +10,7 @@ import { precipitationTypes } from "../forecast.helpers";
 // Components
 import { Panel, WeatherIcon } from "components/simple";
 import {
+  HumidityWidget,
   TemperatureWidget,
   WindWidget,
 } from "components/simple/WeatherWidgets";
@@ -71,8 +72,7 @@ export default function ForecastOneDayStep({
                     />
                   </div>
                   <div className={styles.humInfo}>
-                    {/* TODO: Move to separate component */}
-                    <i className="wi wi-humidity" /> {Math.round(humidity)}%
+                    <HumidityWidget humidity={humidity} />
                   </div>
                   <div className="">
                     {/* TODO: Move to separate component */}
