@@ -3,9 +3,6 @@ import PropTypes from "prop-types";
 
 import moment from "moment";
 
-// Helpers
-import { precipitationTypes } from "../forecast.helpers";
-
 // Components
 import { Panel, WeatherIcon } from "components/simple";
 import {
@@ -13,6 +10,7 @@ import {
   WindWidget,
   HumidityWidget,
   PressureWidget,
+  PrecipitationTypeWidget,
 } from "components/simple/WeatherWidgets";
 
 // Styles
@@ -89,9 +87,12 @@ export default function CurrentWeather({ weatherData, isLoading }) {
             <div className={styles.precipitation}>
               {/* TODO: Replace with widget */}
               <div>
-                {precipitationType === 0
+                <PrecipitationTypeWidget
+                  precipitationType={precipitationType}
+                />
+                {/* {precipitationType === 0
                   ? "No precipitation"
-                  : precipitationTypes[precipitationType]}
+                  : precipitationTypes[precipitationType]} */}
               </div>
               <i className="wi wi-raindrop" /> {precipitationProbability}%
               <div>
