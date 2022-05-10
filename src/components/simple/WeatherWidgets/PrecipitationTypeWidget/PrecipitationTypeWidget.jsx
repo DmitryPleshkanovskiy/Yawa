@@ -7,9 +7,13 @@ import { precipitationTypes } from "../../../../screens/Forecast/forecast.helper
 export default function PrecipitationTypeWidget({ precipitationType }) {
   return (
     <div>
-      {precipitationType === 0
-        ? "No precipitation"
-        : precipitationTypes[precipitationType]}
+      {precipitationType === 0 ? (
+        <>
+          No <i className="wi wi-raindrop" />
+        </>
+      ) : (
+        precipitationTypes[precipitationType]
+      )}
     </div>
   );
 }

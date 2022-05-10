@@ -4,13 +4,12 @@ import PropTypes from "prop-types";
 // Libraries
 import moment from "moment";
 
-// Helpers
-import { precipitationTypes } from "../forecast.helpers";
-
 // Components
 import { Panel, WeatherIcon } from "components/simple";
 import {
   HumidityWidget,
+  PrecipitationProbabilityWidget,
+  PrecipitationTypeWidget,
   PressureWidget,
   TemperatureWidget,
   WindWidget,
@@ -78,22 +77,17 @@ export default function ForecastOneDayStep({
                     <PressureWidget pressure={pressureSurfaceLevel} />
                   </div>
                   <div className={styles.precipitation}>
-                    {/* TODO: Move to separate component */}
                     <div>
-                      {precipitationType === 0 ? (
-                        <>
-                          No <i className="wi wi-raindrop" />
-                        </>
-                      ) : (
-                        precipitationTypes[precipitationType]
-                      )}
+                      <PrecipitationTypeWidget
+                        precipitationType={precipitationType}
+                      />
                     </div>
-                    {/* TODO: Move to separate component */}
 
                     {precipitationType === 0 ? null : (
                       <div style={{ marginLeft: 10 }}>
-                        <i className="wi wi-raindrop" />{" "}
-                        {precipitationProbability}%
+                        <PrecipitationProbabilityWidget
+                          precipitationProbability={precipitationProbability}
+                        />
                       </div>
                     )}
                   </div>

@@ -11,6 +11,7 @@ import {
   HumidityWidget,
   PressureWidget,
   PrecipitationTypeWidget,
+  PrecipitationProbabilityWidget,
 } from "components/simple/WeatherWidgets";
 
 // Styles
@@ -85,16 +86,15 @@ export default function CurrentWeather({ weatherData, isLoading }) {
             </div>
 
             <div className={styles.precipitation}>
-              {/* TODO: Replace with widget */}
               <div>
                 <PrecipitationTypeWidget
                   precipitationType={precipitationType}
                 />
-                {/* {precipitationType === 0
-                  ? "No precipitation"
-                  : precipitationTypes[precipitationType]} */}
               </div>
-              <i className="wi wi-raindrop" /> {precipitationProbability}%
+              <PrecipitationProbabilityWidget
+                precipitationProbability={precipitationProbability}
+              />
+
               <div>
                 <i className="wi wi-raindrop" />{" "}
                 {Math.round(precipitationIntensity * 100) / 100}
