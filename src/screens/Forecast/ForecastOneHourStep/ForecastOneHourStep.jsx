@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 import moment from "moment";
 
 import { Panel, WeatherIcon } from "components/simple";
+import {
+  TemperatureWidget,
+  WindWidget,
+} from "components/simple/WeatherWidgets";
 
 import styles from "./forecast-one-hour-step.module.scss";
 
@@ -40,6 +44,7 @@ export default function ForecastOneHourStep({
                       code={weatherCode}
                       iconSize="sm"
                       time={
+                        // TODO: replace with helper
                         moment(item?.startTime).isBetween(
                           moment(sunriseTime),
                           moment(sunsetTime)
@@ -51,18 +56,13 @@ export default function ForecastOneHourStep({
                   </div>
                   <div>
                     <div>
-                      <i className="wi wi-thermometer" />{" "}
-                      {Math.round(temperature * 10) / 10}{" "}
-                      <i className="wi wi-celsius" />
+                      <TemperatureWidget temperature={temperature} />
                     </div>
                     <div>
                       <div>
-                        <i className="wi wi-strong-wind" />{" "}
-                        {Math.round(windSpeed)} m/s{" "}
-                        <i
-                          className={`wi wi-wind towards-${Math.round(
-                            (180 + windDirection) % 360
-                          )}-deg`}
+                        <WindWidget
+                          windSpeed={windSpeed}
+                          windDirection={windDirection}
                         />
                       </div>
                     </div>
