@@ -12,6 +12,7 @@ import {
   PressureWidget,
   PrecipitationTypeWidget,
   PrecipitationProbabilityWidget,
+  PrecipitationIntensity,
 } from "components/simple/WeatherWidgets";
 
 // Styles
@@ -96,9 +97,9 @@ export default function CurrentWeather({ weatherData, isLoading }) {
               />
 
               <div>
-                <i className="wi wi-raindrop" />{" "}
-                {Math.round(precipitationIntensity * 100) / 100}
-                mm/hr
+                <PrecipitationIntensity
+                  precipitationIntensity={precipitationIntensity}
+                />
               </div>
             </div>
 
