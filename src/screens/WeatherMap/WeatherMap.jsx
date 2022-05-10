@@ -36,14 +36,15 @@ export default function WeatherMap() {
       attribution:
         '&copy; <a href="https://www.tomorrow.io/weather-api">Powered by Tomorrow.io</a>',
     },
-    {
-      // Precipitation intensity
-      url: `${API_URL}/map/tile/${4}/3/{y}/${
-        weatherLayersTypes.precipitationIntensity
-      }/${TIMESTAMP}.png?apikey=${API_KEY}`,
-      attribution:
-        '&copy; <a href="https://www.tomorrow.io/weather-api">Powered by Tomorrow.io</a>',
-    },
+    // Temporarily disabled
+    // {
+    //   // Precipitation intensity
+    //   url: `${API_URL}/map/tile/${4}/3/{y}/${
+    //     weatherLayersTypes.precipitationIntensity
+    //   }/${TIMESTAMP}.png?apikey=${API_KEY}`,
+    //   attribution:
+    //     '&copy; <a href="https://www.tomorrow.io/weather-api">Powered by Tomorrow.io</a>',
+    // },
   ];
 
   return (
@@ -60,10 +61,11 @@ export default function WeatherMap() {
             legend={
               <>
                 Current weather conditions map. It represents{" "}
-                <span className={styles.clouds}>clouds</span> and{" "}
-                <span className={styles.precipitation}>
+                <span className={styles.clouds}>clouds</span>
+                {/* and{" "}
+                 <span className={styles.precipitation}>
                   precipitation intensity
-                </span>{" "}
+                </span>{" "} */}
                 data.
               </>
             }
