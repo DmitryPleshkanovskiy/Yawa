@@ -1,10 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Libraries
 import moment from "moment";
 
-import { Panel, WeatherIcon } from "components/simple";
+// Helpers
+import { isNowDayOrNight } from "helpers";
 
+// Components
+import { Panel, WeatherIcon } from "components/simple";
+import {
+  TemperatureWidget,
+  WindWidget,
+} from "components/simple/WeatherWidgets";
+
+// Styles
 import styles from "./forecast-one-hour-step.module.scss";
 
 export default function ForecastOneHourStep({
@@ -18,15 +28,19 @@ export default function ForecastOneHourStep({
       {!isLoading ? (
         <div className={styles.stepsWrapper}>
           <div className={styles.steps}>
+            {/* First 24 hours from forecast */}
             {weatherData?.intervals?.slice(0, 24).map((item, index) => {
               const {
-                weatherCode,
-                temperature,
-                windSpeed,
-                windDirection,
-                sunriseTime,
-                sunsetTime,
-              } = item?.values || {};
+                startTime,
+                values: {
+                  weatherCode,
+                  temperature,
+                  windSpeed,
+                  windDirection,
+                  sunriseTime,
+                  sunsetTime,
+                } = {},
+              } = item || {};
 
               return (
                 <div
@@ -35,36 +49,22 @@ export default function ForecastOneHourStep({
                   className={styles.hourForecastItem}
                 >
                   <div>
-                    <div>{moment(item?.startTime).format("HH:mm")}</div>
+                    <div>{moment(startTime).format("HH:mm")}</div>
                     <WeatherIcon
                       code={weatherCode}
                       iconSize="sm"
-                      time={
-                        moment(item?.startTime).isBetween(
-                          moment(sunriseTime),
-                          moment(sunsetTime)
-                        )
-                          ? "day"
-                          : "night"
-                      }
+                      time={isNowDayOrNight(sunriseTime, sunsetTime, startTime)}
                     />
                   </div>
                   <div>
                     <div>
-                      <i className="wi wi-thermometer" />{" "}
-                      {Math.round(temperature * 10) / 10}{" "}
-                      <i className="wi wi-celsius" />
+                      <TemperatureWidget temperature={temperature} />
                     </div>
-                    <div>
-                      <div>
-                        <i className="wi wi-strong-wind" />{" "}
-                        {Math.round(windSpeed)} m/s{" "}
-                        <i
-                          className={`wi wi-wind towards-${Math.round(
-                            (180 + windDirection) % 360
-                          )}-deg`}
-                        />
-                      </div>
+                    <div className={styles.windWidgetContainer}>
+                      <WindWidget
+                        windSpeed={windSpeed}
+                        windDirection={windDirection}
+                      />
                     </div>
                   </div>
                 </div>

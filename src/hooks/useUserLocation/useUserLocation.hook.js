@@ -74,6 +74,7 @@ export const useUserLocation = () => {
         }));
 
         // TODO: show message/notification to enable geolocation
+        // eslint-disable-next-line no-console
         console.log(error);
       });
   };

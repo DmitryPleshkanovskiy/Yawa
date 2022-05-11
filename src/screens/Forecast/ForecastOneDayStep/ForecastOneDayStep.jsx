@@ -1,15 +1,19 @@
-/* eslint-disable react/no-array-index-key */
 import React from "react";
 import PropTypes from "prop-types";
 
 // Libraries
 import moment from "moment";
 
-// Helpers
-import { precipitationTypes } from "../forecast.helpers";
-
 // Components
 import { Panel, WeatherIcon } from "components/simple";
+import {
+  HumidityWidget,
+  PrecipitationProbabilityWidget,
+  PrecipitationTypeWidget,
+  PressureWidget,
+  TemperatureWidget,
+  WindWidget,
+} from "components/simple/WeatherWidgets";
 
 // Styles
 import styles from "./forecast-one-day-step.module.scss";
@@ -34,21 +38,20 @@ export default function ForecastOneDayStep({
               pressureSurfaceLevel,
               precipitationType,
               precipitationProbability,
-              precipitationIntensity,
             } = item?.values || {};
+
+            const dateNumber = moment(item?.startTime).format("DD");
+            const dateShort = moment(item?.startTime).format("dd");
 
             return (
               <div
+                // eslint-disable-next-line react/no-array-index-key
                 key={`forecast-one-day-row-${index}`}
                 className={styles.forecastDayRow}
               >
                 <div className={styles.date}>
-                  <div className={styles.dateNumber}>
-                    {moment(item?.startTime).format("DD")}
-                  </div>
-                  <div className={styles.dateShort}>
-                    {moment(item?.startTime).format("dd")}
-                  </div>
+                  <div className={styles.dateNumber}>{dateNumber}</div>
+                  <div className={styles.dateShort}>{dateShort}</div>
                 </div>
                 <div className={styles.icon}>
                   <WeatherIcon
@@ -59,41 +62,32 @@ export default function ForecastOneDayStep({
                 </div>
                 <div className={styles.forecastDetails}>
                   <div className={styles.tempInfo}>
-                    <i className="wi wi-thermometer" />{" "}
-                    {Math.round(temperature * 10) / 10}{" "}
-                    <i className="wi wi-celsius" />
+                    <TemperatureWidget temperature={temperature} />
                   </div>
                   <div className={styles.windInfo}>
-                    <i className="wi wi-strong-wind" /> {Math.round(windSpeed)}{" "}
-                    m/s{" "}
-                    <i
-                      className={`wi wi-wind towards-${Math.round(
-                        (180 + windDirection) % 360
-                      )}-deg`}
+                    <WindWidget
+                      windSpeed={windSpeed}
+                      windDirection={windDirection}
                     />
                   </div>
                   <div className={styles.humInfo}>
-                    <i className="wi wi-humidity" /> {Math.round(humidity)}%
+                    <HumidityWidget humidity={humidity} />
                   </div>
-                  <div className="">
-                    <i className="wi wi-barometer" />{" "}
-                    {Math.round(pressureSurfaceLevel)}
-                    hPa
+                  <div>
+                    <PressureWidget pressure={pressureSurfaceLevel} />
                   </div>
                   <div className={styles.precipitation}>
                     <div>
-                      {precipitationType === 0 ? (
-                        <>
-                          No <i className="wi wi-raindrop" />
-                        </>
-                      ) : (
-                        precipitationTypes[precipitationType]
-                      )}
+                      <PrecipitationTypeWidget
+                        precipitationType={precipitationType}
+                      />
                     </div>
+
                     {precipitationType === 0 ? null : (
-                      <div style={{ marginLeft: 10 }}>
-                        <i className="wi wi-raindrop" />{" "}
-                        {precipitationProbability}%
+                      <div className={styles.precipitationProbabilityWrapper}>
+                        <PrecipitationProbabilityWidget
+                          precipitationProbability={precipitationProbability}
+                        />
                       </div>
                     )}
                   </div>
@@ -121,7 +115,6 @@ ForecastOneDayStep.propTypes = {
           windSpeed: PropTypes.number,
           humidity: PropTypes.number,
           pressureSurfaceLevel: PropTypes.number,
-          precipitationIntensity: PropTypes.number,
           precipitationProbability: PropTypes.number,
           precipitationType: PropTypes.number,
         }),

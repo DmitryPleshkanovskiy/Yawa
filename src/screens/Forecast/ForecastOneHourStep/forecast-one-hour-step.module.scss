@@ -11,6 +11,7 @@
 .steps {
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 10px;
 }
 
@@ -40,4 +41,12 @@
     inset -20px 0 25px -5px $greyShade4;
 
   pointer-events: none;
+}
+
+.windWidgetContainer {
+  > div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }

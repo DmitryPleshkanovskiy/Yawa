@@ -1,13 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Libraries
 import moment from "moment";
 
 // Helpers
-import { precipitationTypes } from "../forecast.helpers";
+import { isNowDayOrNight } from "helpers";
 
 // Components
 import { Panel, WeatherIcon } from "components/simple";
+import {
+  TemperatureWidget,
+  WindWidget,
+  HumidityWidget,
+  PressureWidget,
+  PrecipitationTypeWidget,
+  PrecipitationProbabilityWidget,
+  PrecipitationIntensityWidget,
+} from "components/simple/WeatherWidgets";
 
 // Styles
 import styles from "./current-weather.module.scss";
@@ -47,28 +57,16 @@ export default function CurrentWeather({ weatherData, isLoading }) {
         <div className={styles.layout}>
           <div className={styles.columnLeft}>
             <div className={styles.temp}>
-              <i className="wi wi-thermometer" />{" "}
-              {Math.round(temperature * 10) / 10}{" "}
-              <i className="wi wi-celsius" />
+              <TemperatureWidget temperature={temperature} />
             </div>
             <div className={styles.tempApparent}>
               Feels like:{" "}
               <div>
-                <i className="wi wi-thermometer" />{" "}
-                {Math.round(temperatureApparent * 10) / 10}{" "}
-                <i className="wi wi-celsius" />
+                <TemperatureWidget temperature={temperatureApparent} />
               </div>
             </div>
             <div>
-              <div>
-                <i className="wi wi-strong-wind" />{" "}
-                {Math.round(windSpeed * 10) / 10} m/s{" "}
-                <i
-                  className={`wi wi-wind towards-${Math.round(
-                    (180 + windDirection) % 360
-                  )}-deg`}
-                />
-              </div>
+              <WindWidget windSpeed={windSpeed} windDirection={windDirection} />
             </div>
           </div>
 
@@ -77,37 +75,34 @@ export default function CurrentWeather({ weatherData, isLoading }) {
               <WeatherIcon
                 code={weatherCode}
                 iconSize="lg"
-                time={
-                  moment().isBetween(moment(sunriseTime), moment(sunsetTime))
-                    ? "day"
-                    : "night"
-                }
+                time={isNowDayOrNight(sunriseTime, sunsetTime)}
               />
             </div>
           </div>
           <div className={styles.columnRight}>
             <div className={styles.humidity}>
-              <i className="wi wi-humidity" /> {humidity}%
+              <HumidityWidget humidity={humidity} />
             </div>
 
-            <div className={styles.precipitation}>
+            <div className={styles.precipitaion}>
               <div>
-                {precipitationType === 0
-                  ? "No precipitation"
-                  : precipitationTypes[precipitationType]}
+                <PrecipitationTypeWidget
+                  precipitationType={precipitationType}
+                />
               </div>
-              <i className="wi wi-raindrop" /> {precipitationProbability}%
+              <PrecipitationProbabilityWidget
+                precipitationProbability={precipitationProbability}
+              />
+
               <div>
-                <i className="wi wi-raindrop" />{" "}
-                {Math.round(precipitationIntensity * 100) / 100}
-                mm/hr
+                <PrecipitationIntensityWidget
+                  precipitationIntensity={precipitationIntensity}
+                />
               </div>
             </div>
 
             <div>
-              <i className="wi wi-barometer" />{" "}
-              {Math.round(pressureSurfaceLevel)}
-              hPa
+              <PressureWidget pressure={pressureSurfaceLevel} />
             </div>
           </div>
         </div>
