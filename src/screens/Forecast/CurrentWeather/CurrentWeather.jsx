@@ -1,7 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Libraries
 import moment from "moment";
+
+// Helpers
+import { isNowDayOrNight } from "helpers";
 
 // Components
 import { Panel, WeatherIcon } from "components/simple";
@@ -46,12 +50,6 @@ export default function CurrentWeather({ weatherData, isLoading }) {
         sunsetTime: moment().toISOString(),
       };
 
-  // TODO: Move to helpers
-  const isNowDayOrNight = () =>
-    moment().isBetween(moment(sunriseTime), moment(sunsetTime))
-      ? "day"
-      : "night";
-
   return (
     <Panel>
       <Panel.Title>Current:</Panel.Title>
@@ -77,7 +75,7 @@ export default function CurrentWeather({ weatherData, isLoading }) {
               <WeatherIcon
                 code={weatherCode}
                 iconSize="lg"
-                time={isNowDayOrNight()}
+                time={isNowDayOrNight(sunriseTime, sunsetTime)}
               />
             </div>
           </div>
@@ -86,7 +84,7 @@ export default function CurrentWeather({ weatherData, isLoading }) {
               <HumidityWidget humidity={humidity} />
             </div>
 
-            <div className={styles.precipitation}>
+            <div className={styles.precipitaion}>
               <div>
                 <PrecipitationTypeWidget
                   precipitationType={precipitationType}
