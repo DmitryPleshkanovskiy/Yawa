@@ -1,8 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-// Helpers
-import { precipitationTypes } from "../../../../screens/Forecast/forecast.helpers";
+export const precipitationTypes = {
+  0: "N/A",
+  1: "Rain",
+  2: "Snow",
+  3: "Freezing Rain",
+  4: "Ice Pellets",
+};
 
 export default function PrecipitationTypeWidget({ precipitationType }) {
   return (
