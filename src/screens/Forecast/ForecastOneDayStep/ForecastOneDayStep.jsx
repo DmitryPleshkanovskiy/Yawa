@@ -84,7 +84,7 @@ export default function ForecastOneDayStep({
                     </div>
 
                     {precipitationType === 0 ? null : (
-                      <div style={{ marginLeft: 10 }}>
+                      <div className={styles.precipitationProbabilityWrapper}>
                         <PrecipitationProbabilityWidget
                           precipitationProbability={precipitationProbability}
                         />
