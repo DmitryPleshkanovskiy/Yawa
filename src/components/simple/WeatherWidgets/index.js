@@ -4,4 +4,4 @@ export { default as HumidityWidget } from "./HumidityWidget";
 export { default as PressureWidget } from "./PressureWidget";
 export { default as PrecipitationTypeWidget } from "./PrecipitationTypeWidget";
 export { default as PrecipitationProbabilityWidget } from "./PrecipitationProbabilityWidget";
-export { default as PrecipitationIntensity } from "./PrecipitationIntensity";
+export { default as PrecipitationIntensityWidget } from "./PrecipitationIntensityWidget";

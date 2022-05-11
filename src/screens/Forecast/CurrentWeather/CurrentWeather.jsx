@@ -12,7 +12,7 @@ import {
   PressureWidget,
   PrecipitationTypeWidget,
   PrecipitationProbabilityWidget,
-  PrecipitationIntensity,
+  PrecipitationIntensityWidget,
 } from "components/simple/WeatherWidgets";
 
 // Styles
@@ -97,7 +97,7 @@ export default function CurrentWeather({ weatherData, isLoading }) {
               />
 
               <div>
-                <PrecipitationIntensity
+                <PrecipitationIntensityWidget
                   precipitationIntensity={precipitationIntensity}
                 />
               </div>

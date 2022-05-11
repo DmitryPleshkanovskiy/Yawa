@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function PrecipitationIntensity({ precipitationIntensity }) {
+export default function PrecipitationIntensityWidget({
+  precipitationIntensity,
+}) {
   return (
     <>
       <i className="wi wi-raindrop" />{" "}
@@ -11,10 +13,10 @@ export default function PrecipitationIntensity({ precipitationIntensity }) {
   );
 }
 
-PrecipitationIntensity.propTypes = {
+PrecipitationIntensityWidget.propTypes = {
   precipitationIntensity: PropTypes.number,
 };
 
-PrecipitationIntensity.defaultProps = {
+PrecipitationIntensityWidget.defaultProps = {
   precipitationIntensity: 0,
 };
