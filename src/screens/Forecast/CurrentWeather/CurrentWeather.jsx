@@ -90,15 +90,19 @@ export default function CurrentWeather({ weatherData, isLoading }) {
                   precipitationType={precipitationType}
                 />
               </div>
-              <PrecipitationProbabilityWidget
-                precipitationProbability={precipitationProbability}
-              />
+              {precipitationType !== 0 ? (
+                <>
+                  <PrecipitationProbabilityWidget
+                    precipitationProbability={precipitationProbability}
+                  />
 
-              <div>
-                <PrecipitationIntensityWidget
-                  precipitationIntensity={precipitationIntensity}
-                />
-              </div>
+                  <div>
+                    <PrecipitationIntensityWidget
+                      precipitationIntensity={precipitationIntensity}
+                    />
+                  </div>
+                </>
+              ) : null}
             </div>
 
             <div>
