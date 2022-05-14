@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+// Global store
+import { useStore } from "store";
+
 // Hooks
 import { useUserLocation } from "hooks";
 
@@ -16,6 +19,7 @@ import { Map } from "components/complex";
 // Styles
 import styles from "./settings.module.scss";
 
+// TODO: Pevent closing the window when data is changed
 export default function Settings() {
   const {
     userLocation,
@@ -24,8 +28,13 @@ export default function Settings() {
     getLocationFromNavigator,
   } = useUserLocation();
 
+  const { actions } = useStore();
+
+  const initialState = userLocation ? { ...userLocation } : { lat: 0, lon: 0 };
+
   const [state, setState] = useState({
-    ...(userLocation ? { ...userLocation } : { lat: 0, lon: 0 }),
+    ...initialState,
+    isDataChanged: false,
   });
 
   useEffect(() => {
@@ -36,7 +45,7 @@ export default function Settings() {
     }));
   }, [userLocation]);
 
-  const { lat, lon, isLocalLocationLoading } = state;
+  const { lat, lon, isLocalLocationLoading, isDataChanged } = state;
 
   const validators = {
     isLatitude: (latValue) =>
@@ -45,8 +54,27 @@ export default function Settings() {
       Number.isFinite(lonValue) && Math.abs(lonValue) <= 180,
   };
 
+  const mapCenter = {
+    lat: validators.isLatitude(+lat) ? +lat : 0,
+    lon: validators.isLongitude(+lon) ? +lon : 0,
+  };
+
+  const isLongitudeInvalid =
+    !validators.isLongitude(+lon) || lon === ""
+      ? "Longitude should be a number between -180 and 180"
+      : "";
+
+  const isLatitudeInvalid =
+    !validators.isLatitude(+lat) || lat === ""
+      ? "Latitude should be a number between -90 and 90"
+      : "";
+
   const handleInputChange = (name, value) => {
-    setState((prevState) => ({ ...prevState, [name]: value }));
+    setState((prevState) => ({
+      ...prevState,
+      [name]: value,
+      isDataChanged: true,
+    }));
   };
 
   const handleGetDeviceLocation = () => {
@@ -59,10 +87,15 @@ export default function Settings() {
           lat,
           lon,
           isLocalLocationLoading: false,
+          isDataChanged: true,
         }))
       )
       .catch(() => {
-        console.log("Can't get navigator location");
+        actions.addNotification({
+          type: "danger",
+          msg: "Can't get navigator location",
+        });
+
         setState((prevState) => ({
           ...prevState,
           isLocalLocationLoading: false,
@@ -75,22 +108,24 @@ export default function Settings() {
       ...prevState,
       lat: coord.lat,
       lon: coord.lng,
+      isDataChanged: true,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Move validation here
-    // if valid
-    const newUserLocation = { lat, lon };
-    setUserLocation(newUserLocation);
 
-    // TODO: Add successfull notification on save
-  };
+    if (!isLatitudeInvalid && !isLongitudeInvalid) {
+      const newUserLocation = { lat, lon };
 
-  const mapCenter = {
-    lat: validators.isLatitude(+lat) ? +lat : 0,
-    lon: validators.isLongitude(+lon) ? +lon : 0,
+      setUserLocation(newUserLocation);
+      setState((prevState) => ({ ...prevState, isDataChanged: false }));
+
+      actions.addNotification({
+        type: "success",
+        msg: "Settings are saved successfully",
+      });
+    }
   };
 
   return (
@@ -141,11 +176,7 @@ export default function Settings() {
                 name="lat"
                 value={lat}
                 onChange={handleInputChange}
-                error={
-                  !validators.isLatitude(+lat) || lat === ""
-                    ? "Latitude should be a number between -90 and 90"
-                    : ""
-                }
+                error={isLatitudeInvalid}
               />
               <Input
                 type="number"
@@ -154,16 +185,15 @@ export default function Settings() {
                 name="lon"
                 value={lon}
                 onChange={handleInputChange}
-                error={
-                  !validators.isLongitude(+lon) || lon === ""
-                    ? "Longitude should be a number between -180 and 180"
-                    : ""
-                }
+                error={isLongitudeInvalid}
               />
               <Button
                 className={styles.saveButton}
                 variant="primary"
                 type="submit"
+                disabled={
+                  isLatitudeInvalid || isLongitudeInvalid || !isDataChanged
+                }
               >
                 Save
               </Button>

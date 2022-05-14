@@ -23,13 +23,11 @@
 
 .itemEnterActive {
   transition: all 0.5s;
-  transform: rotateX(0deg);
   opacity: 1;
 }
 
 .itemLeaveActive {
   transition: all 0.5s;
-  transform: rotateX(90deg);
   opacity: 0;
 }
 
