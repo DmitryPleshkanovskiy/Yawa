@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 
+// Constants
+import { notificationsMessages } from "config/notificationsMessages";
+
 // Global store
 import { useStore } from "store";
 
@@ -32,7 +35,14 @@ export default function Forecast() {
     actions,
   } = useStore();
 
-  const { userLocation } = useUserLocation();
+  const { userLocation } = useUserLocation({
+    onError: () => {
+      actions.addNotification({
+        type: "danger",
+        msg: notificationsMessages.getNavigatorLocationError,
+      });
+    },
+  });
 
   const fetchForecastDataRequest = () => {
     actions.fetchForecastDataRequest();
@@ -41,9 +51,16 @@ export default function Forecast() {
       .getTimelines(userLocation)
       .then((res) => actions.fetchForecastDataSuccess(res))
       .catch((err) => {
-        // TODO: Replace with notification component
-        // eslint-disable-next-line no-console
-        console.error(err);
+        if (process.env.NODE_ENV === "development") {
+          // eslint-disable-next-line no-console
+          console.error(err);
+        }
+
+        actions.addNotification({
+          type: "danger",
+          msg: notificationsMessages.getForecastDataError,
+        });
+
         actions.fetchForecastDataFailure(err);
       });
   };

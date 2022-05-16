@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+// Constants
+import { notificationsMessages } from "config/notificationsMessages";
+
 // Global store
 import { useStore } from "store";
 
@@ -21,14 +24,21 @@ import styles from "./settings.module.scss";
 
 // TODO: Pevent closing the window when data is changed
 export default function Settings() {
+  const { actions } = useStore();
+
   const {
     userLocation,
     isUserLocationLoading,
     setUserLocation,
     getLocationFromNavigator,
-  } = useUserLocation();
-
-  const { actions } = useStore();
+  } = useUserLocation({
+    onError: () => {
+      actions.addNotification({
+        type: "danger",
+        msg: notificationsMessages.getNavigatorLocationError,
+      });
+    },
+  });
 
   const initialState = userLocation ? { ...userLocation } : { lat: 0, lon: 0 };
 
@@ -69,6 +79,9 @@ export default function Settings() {
       ? "Latitude should be a number between -90 and 90"
       : "";
 
+  const isSubmitButtonDisabled =
+    !!isLatitudeInvalid || !!isLongitudeInvalid || !isDataChanged;
+
   const handleInputChange = (name, value) => {
     setState((prevState) => ({
       ...prevState,
@@ -93,7 +106,7 @@ export default function Settings() {
       .catch(() => {
         actions.addNotification({
           type: "danger",
-          msg: "Can't get navigator location",
+          msg: notificationsMessages.getNavigatorLocationShortError,
         });
 
         setState((prevState) => ({
@@ -123,7 +136,7 @@ export default function Settings() {
 
       actions.addNotification({
         type: "success",
-        msg: "Settings are saved successfully",
+        msg: notificationsMessages.saveSettingsSuccess,
       });
     }
   };
@@ -191,9 +204,7 @@ export default function Settings() {
                 className={styles.saveButton}
                 variant="primary"
                 type="submit"
-                disabled={
-                  isLatitudeInvalid || isLongitudeInvalid || !isDataChanged
-                }
+                disabled={isSubmitButtonDisabled}
               >
                 Save
               </Button>
