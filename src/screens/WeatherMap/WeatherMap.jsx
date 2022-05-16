@@ -1,5 +1,11 @@
 import React from "react";
 
+// Constants
+import { notificationsMessages } from "config/notificationsMessages";
+
+// Store
+import { useStore } from "store";
+
 // Custom hooks
 import { useUserLocation } from "hooks";
 
@@ -11,7 +17,16 @@ import { ErrorBoundary, Loader } from "components/simple";
 import styles from "./weather-map.module.scss";
 
 export default function WeatherMap() {
-  const { userLocation, isUserLocationLoading } = useUserLocation();
+  const { actions } = useStore();
+
+  const { userLocation, isUserLocationLoading } = useUserLocation({
+    onError: () => {
+      actions.addNotification({
+        type: "danger",
+        msg: notificationsMessages.getNavigatorLocationError,
+      });
+    },
+  });
 
   const API_URL = process.env.REACT_APP_WEATHER_API_URL;
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
@@ -61,7 +76,7 @@ export default function WeatherMap() {
             legend={
               <>
                 Current weather conditions map. It represents{" "}
-                <span className={styles.clouds}>clouds</span>
+                <span className={styles.clouds}>clouds</span>{" "}
                 {/* and{" "}
                  <span className={styles.precipitation}>
                   precipitation intensity
