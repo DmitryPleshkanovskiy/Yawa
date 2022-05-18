@@ -1,3 +1,4 @@
+import { Notifications } from "components/simple";
 import React from "react";
 
 import Router from "router";
@@ -8,6 +9,7 @@ function App() {
   return (
     <ContextProvider>
       <Router />
+      <Notifications />
     </ContextProvider>
   );
 }

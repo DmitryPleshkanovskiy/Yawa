@@ -1,0 +1,49 @@
+@import "~styles/colors";
+
+.box {
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 300px;
+  height: 100%;
+  z-index: 10000;
+  pointer-events: none;
+
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.itemEnter {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.itemEnterActive {
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.itemLeaveActive {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.positionTop {
+  width: fit-content;
+  max-width: 500px;
+  position: absolute;
+  margin: 10px auto 0 auto;
+  left: 0;
+  right: 0;
+  pointer-events: initial;
+}
+
+.positionBottom {
+  // position: absolute !important;
+  // bottom: 0;
+  // right: 10px;
+  pointer-events: initial;
+}

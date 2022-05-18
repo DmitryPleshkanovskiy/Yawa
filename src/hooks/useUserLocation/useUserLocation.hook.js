@@ -2,17 +2,20 @@ import { useEffect, useState } from "react";
 
 import { defaultUserLocation } from "config/index";
 
-export const useUserLocation = () => {
+export const useUserLocation = ({ onError } = { onError: () => {} }) => {
   const [state, setState] = useState({
     userLocation: null,
     isUserLocationLoading: false,
+    getLocationFromNavigatorError: "",
   });
 
-  const { userLocation, isUserLocationLoading } = state;
+  const { userLocation, isUserLocationLoading, getLocationFromNavigatorError } =
+    state;
 
   const setUserLocation = ({ lat, lon }) => {
     setState((prevState) => ({ ...prevState, userLocation: { lat, lon } }));
 
+    // TODO: Create service for local storage
     localStorage.setItem(
       "userLocation",
       JSON.stringify({
@@ -43,6 +46,7 @@ export const useUserLocation = () => {
 
     getLocationFromNavigator()
       .then(({ lat, lon }) => {
+        // TODO: Create service for local storage
         localStorage.setItem(
           "userLocation",
           JSON.stringify({
@@ -58,6 +62,7 @@ export const useUserLocation = () => {
         }));
       })
       .catch((error) => {
+        // TODO: Create service for local storage
         localStorage.setItem(
           "userLocation",
           JSON.stringify({ ...defaultUserLocation })
@@ -73,7 +78,8 @@ export const useUserLocation = () => {
           userLocationError: error,
         }));
 
-        // TODO: show message/notification to enable geolocation
+        onError(error);
+
         // eslint-disable-next-line no-console
         console.log(error);
       });
@@ -83,6 +89,7 @@ export const useUserLocation = () => {
     if (!userLocation) {
       let parsedUserLocation;
 
+      // TODO: Create service for local storage
       const storedUserLocation = localStorage.getItem("userLocation");
 
       if (storedUserLocation) {
@@ -107,5 +114,6 @@ export const useUserLocation = () => {
     setUserLocation,
     isUserLocationLoading,
     getLocationFromNavigator,
+    getLocationFromNavigatorError,
   };
 };

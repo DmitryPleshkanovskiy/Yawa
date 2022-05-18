@@ -1,3 +1,4 @@
+import createNotification from "helpers/notifications.helpers";
 import {
   // Fetch forecast data
   FETCH_FORECAST_DATA_REQUEST,
@@ -6,6 +7,10 @@ import {
 
   // User location
   SET_USER_LOCATION,
+
+  // Notifications
+  ADD_NOTIFICATION,
+  REMOVE_NOTIFICATION,
 } from "./constants";
 
 export const initialState = {
@@ -16,6 +21,9 @@ export const initialState = {
 
   // User location
   userLocation: null,
+
+  // Notifications
+  notifications: [],
 };
 
 const reducer = (state, { type, payload }) => {
@@ -48,6 +56,22 @@ const reducer = (state, { type, payload }) => {
         userLocation: payload,
       };
     // === END User location ===
+
+    // === Notifications ===
+    case ADD_NOTIFICATION:
+      return {
+        ...state,
+        notifications: [...state.notifications, createNotification(payload)],
+      };
+
+    case REMOVE_NOTIFICATION:
+      return {
+        ...state,
+        notifications: state.notifications.filter(
+          (notification) => notification.id !== payload
+        ),
+      };
+    // === END Notifications ===
 
     default:
       return state;
