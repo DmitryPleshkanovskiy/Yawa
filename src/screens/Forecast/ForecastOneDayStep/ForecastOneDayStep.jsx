@@ -77,7 +77,11 @@ export default function ForecastOneDayStep({
                     <PressureWidget pressure={pressureSurfaceLevel} />
                   </div>
                   <div className={styles.precipitation}>
-                    <div>
+                    <div
+                      className={
+                        precipitationType === 0 ? styles.noPrecipitation : ""
+                      }
+                    >
                       <PrecipitationTypeWidget
                         precipitationType={precipitationType}
                       />

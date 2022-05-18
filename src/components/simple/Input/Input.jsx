@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Form } from "react-bootstrap";
+// Components
+import { Form, InputGroup } from "react-bootstrap";
 
+// Styles
 import styles from "./input.module.scss";
 
 const Input = ({
@@ -27,7 +29,7 @@ const Input = ({
         </Form.Label>
       )}
 
-      <div>
+      <InputGroup hasValidation>
         <Form.Control
           type="text"
           // eslint-disable-next-line react/jsx-props-no-spreading
@@ -37,9 +39,10 @@ const Input = ({
           onClick={onClick}
           placeholder={placeholder}
           data-testid="input"
+          isInvalid={error}
         />
-        <Form.Text className={styles.error}>{error}</Form.Text>
-      </div>
+        <Form.Control.Feedback type="invalid">{error}</Form.Control.Feedback>
+      </InputGroup>
     </div>
   );
 };

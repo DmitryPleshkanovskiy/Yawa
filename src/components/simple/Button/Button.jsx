@@ -19,6 +19,7 @@ export default function Button(props) {
       {...buttonProps}
       variant={variant}
       disabled={isLoading || disabled}
+      data-test="button"
     >
       {!isLoading ? children : <Loader variant={loaderVariant} />}
     </BootstrapButton>
