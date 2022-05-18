@@ -6,6 +6,10 @@ import {
 
   // User location
   SET_USER_LOCATION,
+
+  // Notifications
+  ADD_NOTIFICATION,
+  REMOVE_NOTIFICATION,
 } from "./constants";
 
 export const useActions = (dispatch) => ({
@@ -40,4 +44,20 @@ export const useActions = (dispatch) => ({
     });
   },
   // === END User location ===
+
+  // === Notifications ===
+  addNotification({ type, position, msg }) {
+    dispatch({
+      type: ADD_NOTIFICATION,
+      payload: { type, position, msg },
+    });
+  },
+
+  removeNotification(id) {
+    dispatch({
+      type: REMOVE_NOTIFICATION,
+      payload: id,
+    });
+  },
+  // === END Notifications ===
 });

@@ -5,13 +5,20 @@ import { Button as BootstrapButton } from "react-bootstrap";
 import Loader from "../Loader/Loader";
 
 export default function Button(props) {
-  const { variant, loaderVariant, children, isLoading, ...buttonProps } = props;
+  const {
+    variant,
+    loaderVariant,
+    children,
+    isLoading,
+    disabled,
+    ...buttonProps
+  } = props;
   return (
     <BootstrapButton
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...buttonProps}
       variant={variant}
-      disabled={isLoading}
+      disabled={isLoading || disabled}
     >
       {!isLoading ? children : <Loader variant={loaderVariant} />}
     </BootstrapButton>
@@ -24,6 +31,7 @@ Button.propTypes = {
   variant: PropTypes.string,
   loaderVariant: PropTypes.string,
   isLoading: PropTypes.bool,
+  disabled: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -32,4 +40,5 @@ Button.defaultProps = {
   variant: "",
   loaderVariant: "",
   isLoading: false,
+  disabled: false,
 };
