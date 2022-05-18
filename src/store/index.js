@@ -21,5 +21,13 @@ export const ContextProvider = (props) => {
 };
 
 ContextProvider.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.number,
+  ]),
+};
+
+ContextProvider.defaultProps = {
+  children: null,
 };
