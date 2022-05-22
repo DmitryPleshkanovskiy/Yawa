@@ -55,23 +55,23 @@ export default function CurrentWeather({ weatherData, isLoading }) {
       <Panel.Title>Current:</Panel.Title>
       <Panel.Body className={styles.panelBody} isLoading={isLoading}>
         <div className={styles.layout}>
-          <div className={styles.columnLeft}>
-            <div className={styles.temp}>
+          <div className={`${styles.column} ${styles.columnLeft}`}>
+            <div className={`${styles.cell} ${styles.temp}`}>
               <TemperatureWidget temperature={temperature} />
             </div>
-            <div className={styles.tempApparent}>
+            <div className={`${styles.cell} ${styles.tempApparent}`}>
               Feels like:{" "}
               <div>
                 <TemperatureWidget temperature={temperatureApparent} />
               </div>
             </div>
-            <div>
+            <div className={styles.cell}>
               <WindWidget windSpeed={windSpeed} windDirection={windDirection} />
             </div>
           </div>
 
-          <div className={styles.mainValue}>
-            <div>
+          <div className={`${styles.column} ${styles.mainValue}`}>
+            <div className={styles.cell}>
               <WeatherIcon
                 code={weatherCode}
                 iconSize="lg"
@@ -79,12 +79,12 @@ export default function CurrentWeather({ weatherData, isLoading }) {
               />
             </div>
           </div>
-          <div className={styles.columnRight}>
+          <div className={`${styles.column} ${styles.columnRight}`}>
             <div className={styles.humidity}>
               <HumidityWidget humidity={humidity} />
             </div>
 
-            <div className={styles.precipitaion}>
+            <div className={`${styles.cell} ${styles.precipitaion}`}>
               <div>
                 <PrecipitationTypeWidget
                   precipitationType={precipitationType}
@@ -105,7 +105,7 @@ export default function CurrentWeather({ weatherData, isLoading }) {
               ) : null}
             </div>
 
-            <div>
+            <div className={styles.cell}>
               <PressureWidget pressure={pressureSurfaceLevel} />
             </div>
           </div>

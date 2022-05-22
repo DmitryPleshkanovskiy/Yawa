@@ -11,11 +11,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
-  > div {
+  .column {
     display: flex;
     flex-direction: column;
 
-    >  div {
+    .cell {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .mainValue {
-  > div {
+  .cell {
     flex-direction: column;
   }
 }
@@ -45,6 +45,7 @@
   font-size: 13px;
   color: $greyShade2;
   text-align: center;
+  flex-direction: column;
 }
 
 .humidity {
