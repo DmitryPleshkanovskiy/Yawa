@@ -61,22 +61,22 @@ export default function ForecastOneDayStep({
                   />
                 </div>
                 <div className={styles.forecastDetails}>
-                  <div className={styles.tempInfo}>
+                  <div className={`${styles.cell} ${styles.tempInfo}`}>
                     <TemperatureWidget temperature={temperature} />
                   </div>
-                  <div className={styles.windInfo}>
+                  <div className={`${styles.cell} ${styles.windInfo}`}>
                     <WindWidget
                       windSpeed={windSpeed}
                       windDirection={windDirection}
                     />
                   </div>
-                  <div className={styles.humInfo}>
+                  <div className={`${styles.cell} ${styles.humInfo}`}>
                     <HumidityWidget humidity={humidity} />
                   </div>
-                  <div>
+                  <div className={styles.cell}>
                     <PressureWidget pressure={pressureSurfaceLevel} />
                   </div>
-                  <div className={styles.precipitation}>
+                  <div className={`${styles.cell} ${styles.precipitation}`}>
                     <div
                       className={
                         precipitationType === 0 ? styles.noPrecipitation : ""

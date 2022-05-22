@@ -1,12 +1,25 @@
+// Shades
+// TODO: Remove color from var names
 $greyShade1: #000;
 $greyShade2: #959595;
 $greyShade3: #f8f9fa;
 $greyShade4: #fff;
 
+// Main theme colors
+$alertColor: tomato;
 $primaryColor: #282c34;
+$successColor: green;
+$dangerColor: $alertColor;
+
 $mainBoxShadowColor: #808080;
 
+// Weather colors
 $cloudsColor: royalblue;
 $precipitationColor: green;
+$humidityColor: #357091;
 
-$alertColor: tomato;
+$shadowColor: gray;
+$warmColor: orange;
+$wetColor: #357091;
+$coldColor: cornflowerblue;
+$stormColor: darkslateblue;

@@ -8,14 +8,17 @@ $body-bg: $greyShade3;
 $theme-colors: (
   "primary": $primary,
   "secondary": $greyShade4,
-  "success": green,
-  "danger": red,
+  "success": $successColor,
+  "danger": $dangerColor,
 );
 
-.dropdown-menu.show {
-  right: 0;
-  padding: 0;
-  overflow: hidden;
+.dropdown {
+  .dropdown-menu[data-bs-popper] {
+    left: auto !important;
+    right: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
 }
 
 .dropdown-menu .dropdown-item {

@@ -14,8 +14,8 @@ $loader-delay: -0.16s;
   width: $loader-dot-size;
   height: $loader-dot-size;
   border-radius: 50%;
-  animation-fill-mode: both;
   animation: grow $loader-duration ease-in-out infinite alternate;
+  animation-fill-mode: both;
   animation-delay: $loader-delay * 2;
   background-color: $loader-color;
   margin: 0 auto;
@@ -48,6 +48,7 @@ $loader-delay: -0.16s;
     justify-content: center;
     margin: 0 auto;
     background-color: $loader-color-dark;
+
     &:before,
     &:after {
       background-color: $loader-color-dark;
