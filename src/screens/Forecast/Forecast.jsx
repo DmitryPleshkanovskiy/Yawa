@@ -67,7 +67,7 @@ export default function Forecast() {
 
   useEffect(() => {
     if (userLocation) {
-      fetchForecastDataRequest(userLocation);
+      fetchForecastDataRequest();
     }
   }, [userLocation]);
 
