@@ -1,6 +1,8 @@
+@import "~styles/colors";
+
 .error {
-  color: #fff;
-  background-color: tomato;
+  color: $greyShade4;
+  background-color: $alertColor;
   padding: 15px;
   font-weight: bold;
 }

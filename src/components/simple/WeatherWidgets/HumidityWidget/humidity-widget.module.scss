@@ -1,3 +1,5 @@
+@import "~styles/colors";
+
 .humidityValue {
-  color: #357091;
+  color: $humidityColor;
 }
